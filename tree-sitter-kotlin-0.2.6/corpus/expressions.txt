@@ -1,0 +1,27 @@
+==================
+Multiplication expression
+==================
+
+45 * 3
+
+---
+
+(source_file (multiplicative_expression (integer_literal) (integer_literal)))
+
+==================
+Function calls
+==================
+
+print("Hello World!")
+sum(1, 2)
+
+---
+
+(source_file
+	(call_expression (simple_identifier)
+		(call_suffix (value_arguments
+			(value_argument (line_string_literal)))))
+	(call_expression (simple_identifier)
+		(call_suffix (value_arguments
+			(value_argument (integer_literal))
+			(value_argument (integer_literal))))))

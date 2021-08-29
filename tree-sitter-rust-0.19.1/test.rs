@@ -1,0 +1,3 @@
+bitflags! {
+/// a `b` c
+}
