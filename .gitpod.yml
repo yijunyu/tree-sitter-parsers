@@ -1,0 +1,4 @@
+tasks:
+   - before: pip install infercode && python test_infer_c.py
+     command: pip uninstall infercode && pip install infercode==0.0.20 && python test_infer_c.py
+   - command: cd /workspace && git clone https://github.com/tree-sitter/tree-sitter && cd tree-sitter/cli && cargo install --path .
