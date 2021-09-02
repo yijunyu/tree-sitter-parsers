@@ -96,4 +96,4 @@ class ASTParser():
         lang = self.Languages.get(language)
         self.parser.set_language(lang)
 
-parser = ASTParser(langugage='c')
+parser = ASTParser(language='c')

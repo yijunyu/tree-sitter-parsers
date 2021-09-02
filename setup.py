@@ -6,10 +6,10 @@ install_requires=[
 
 setup(
   name = 'tree_sitter_parsers',
-  version = "0.0.1",
+  version = "0.0.2",
   py_modules = ['tree_sitter_parsers'],
   description = 'generate the shared libraries of tree-sitter parsers',
-  author = 'Yijun Yu',
+  author = 'Yijun Yu and Nghi D. Q. Bui',
   author_email = 'yijun.yu@huawei.com',
   license="MIT",
   url = 'https://github.com/yijunyu/tree-sitter-parsers',
@@ -21,6 +21,7 @@ setup(
     'Intended Audience :: Developers',
   ],
   package_dir={"tree_sitter_parsers": "tree_sitter_parsers"},
+  packages=find_packages(where="."),
   install_requires=install_requires,
   include_package_data=True,
 )
