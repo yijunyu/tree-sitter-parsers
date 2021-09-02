@@ -1,0 +1,11 @@
+rm -rf dist/*
+python3 setup.py sdist bdist_wheel
+if [ "$1" == "main" ]; then
+twine upload dist/tree_sitter_parsers-*
+pip uninstall tree_sitter_parsers
+pip install tree_sitter_parsers
+else
+twine upload --repository testpypi dist/tree_sitter_parsers-*
+pip uninstall tree_sitter_parsers
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple tree_sitter_parsers
+fi
