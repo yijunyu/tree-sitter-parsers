@@ -2,6 +2,7 @@ extern crate cc;
 
 use std::path::PathBuf;
 use std::fs;
+use std::env::{var, set_var};
 
 fn add_languages() {
     let paths = fs::read_dir("./").unwrap();
@@ -29,5 +30,9 @@ fn add_languages() {
 }
 
 fn main() {
+    let host = var("HOST").unwrap();
+    let pwd = var("PWD").unwrap();
+    set_var(format!("CFLAGS_{}", host), format!("-I{}/tree-sitter-bash-0.19.0/src", pwd));
+    set_var(format!("CXXFLAGS_{}", host), format!("-I{}/tree-sitter-bash-0.19.0/src", pwd));
     add_languages();
 }
