@@ -1,0 +1,19 @@
+[package]
+name = "tree-sitter-parsers"
+version = "0.0.1"
+authors = ["Yijun Yu <yijun.yu@huawei.com>"]
+edition = "2018"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/yijunyu/tree-sitter-parsers"
+homepage = "https://github.com/yijunyu/tree-sitter-parsers"
+documentation = "https://docs.rs/tree-sitter-parsers"
+keywords = ["parser", "tree-sitter"]
+categories = ["development-tools::procedural-macro-helpers", "encoding"]
+readme = "README.md"
+description = "Preinstallation of tree-sitter parsers as platform-specific shared libraries"
+
+[dependencies]
+tree-sitter = "*"
+
+[build-dependencies]
+cc = "1.0"
