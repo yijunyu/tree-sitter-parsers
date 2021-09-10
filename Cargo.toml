@@ -13,7 +13,7 @@ readme = "README.md"
 description = "Preinstallation of tree-sitter parsers as platform-specific shared libraries"
 
 [dependencies]
-tree-sitter = "*"
+tree-sitter = "0.20.0"
 
 [build-dependencies]
 cc = "1.0"
