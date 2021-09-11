@@ -9,8 +9,10 @@ use tree_sitter_parsers::parse;
 
 fn main() {
     let tree = parse("fn main() { }", "rust");
+    println!("{}", tree.root_node().to_sexp());
     assert_eq!(tree.root_node().to_sexp(), "(source_file (function_item name: (identifier) parameters: (parameters) body: (block)))");
 }
+
 ```
 
 In the above invocation of `parse` function, a string of the code is the first argument, and a string of the programming language is the second argument.
