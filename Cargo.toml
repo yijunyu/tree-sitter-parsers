@@ -1,6 +1,6 @@
 [package]
 name = "tree-sitter-parsers"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["Yijun Yu <yijun.yu@huawei.com>"]
 edition = "2018"
 license = "Apache-2.0 OR MIT"
