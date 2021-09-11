@@ -4,6 +4,23 @@ use std::path::PathBuf;
 use std::fs;
 use std::env::{var, set_var};
 
+fn fix_include() {
+    let host = var("HOST").unwrap();
+    let paths = fs::read_dir("./").unwrap();
+    for entry in paths {
+        if let Ok(entry) = entry {
+            let p = entry.path();
+            let s = &p.to_string_lossy();
+            if entry.file_type().unwrap().is_dir() && s.starts_with("./tree-sitter-") {
+                let include_path: PathBuf = std::fs::canonicalize::<PathBuf>([s, "src"].iter().collect()).unwrap();
+                set_var(format!("CFLAGS_{}", host), format!("-I{}", include_path.to_string_lossy()));
+                set_var(format!("CXXFLAGS_{}", host), format!("-I{}", include_path.to_string_lossy()));
+                return
+            }
+        }
+    }
+}
+
 fn add_languages() {
     let paths = fs::read_dir("./").unwrap();
     for entry in paths {
@@ -30,9 +47,6 @@ fn add_languages() {
 }
 
 fn main() {
-    let host = var("HOST").unwrap();
-    let pwd = var("PWD").unwrap();
-    set_var(format!("CFLAGS_{}", host), format!("-I{}/tree-sitter-bash-0.19.0/src", pwd));
-    set_var(format!("CXXFLAGS_{}", host), format!("-I{}/tree-sitter-bash-0.19.0/src", pwd));
+    fix_include();
     add_languages();
 }
