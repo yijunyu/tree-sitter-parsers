@@ -4,24 +4,8 @@ use std::path::PathBuf;
 use std::fs;
 use std::env::{var, set_var};
 
-fn fix_include() {
-    let host = var("HOST").unwrap();
-    let paths = fs::read_dir("./").unwrap();
-    for entry in paths {
-        if let Ok(entry) = entry {
-            let p = entry.path();
-            let s = &p.to_string_lossy();
-            if entry.file_type().unwrap().is_dir() && s.starts_with("./tree-sitter-") {
-                let include_path: PathBuf = std::fs::canonicalize::<PathBuf>([s, "src"].iter().collect()).unwrap();
-                set_var(format!("CFLAGS_{}", host), format!("-I{}", include_path.to_string_lossy()));
-                set_var(format!("CXXFLAGS_{}", host), format!("-I{}", include_path.to_string_lossy()));
-                return
-            }
-        }
-    }
-}
-
 fn add_languages() {
+    let host = var("HOST").unwrap();
     let paths = fs::read_dir("./").unwrap();
     for entry in paths {
         if let Ok(entry) = entry {
@@ -34,8 +18,10 @@ fn add_languages() {
                     lang = "c_sharp";
                 }
                 let path: PathBuf = std::fs::canonicalize::<PathBuf>([s, "src"].iter().collect()).unwrap();
+                set_var(format!("CFLAGS_{}", host), format!("-I{}", path.to_string_lossy()));
                 cc::Build::new().file(path.join("parser.c")).compile(format!("tree-sitter-{}", lang).as_str());
                 if path.join("scanner.cc").exists() {
+                    set_var(format!("CXXFLAGS_{}", host), format!("-I{}", path.to_string_lossy()));
                     cc::Build::new().cpp(true).file(path.join("scanner.cc")).compile(format!("tree-sitter-{}-scanner", lang).as_str());
                 }
                 if path.join("scanner.c").exists() {
@@ -47,6 +33,5 @@ fn add_languages() {
 }
 
 fn main() {
-    fix_include();
     add_languages();
 }
