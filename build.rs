@@ -2,10 +2,18 @@ extern crate cc;
 
 use std::path::PathBuf;
 use std::fs;
-use std::env::{var, set_var};
+
+fn canonical_to_path(p: &PathBuf) -> String {
+   let path = p.to_str().unwrap();
+   // workaround for UNC path see https://github.com/rust-lang/rust/issues/42869
+   if path.starts_with(r"\\?\") {
+       String::from(&path[r"\\?\".len()..])
+   } else {
+       String::from(path)
+   }
+}
 
 fn add_languages() {
-    let host = var("HOST").unwrap();
     let paths = fs::read_dir("./").unwrap();
     for entry in paths {
         if let Ok(entry) = entry {
@@ -17,15 +25,17 @@ fn add_languages() {
                 if lang == "c-sharp" {
                     lang = "c_sharp";
                 }
-                let path: PathBuf = std::fs::canonicalize::<PathBuf>([s, "src"].iter().collect()).unwrap();
-                set_var(format!("CFLAGS_{}", host), format!("-I{}", path.to_string_lossy()));
-                cc::Build::new().file(path.join("parser.c")).compile(format!("tree-sitter-{}", lang).as_str());
-                if path.join("scanner.cc").exists() {
-                    set_var(format!("CXXFLAGS_{}", host), format!("-I{}", path.to_string_lossy()));
-                    cc::Build::new().cpp(true).file(path.join("scanner.cc")).compile(format!("tree-sitter-{}-scanner", lang).as_str());
+                let p: PathBuf = std::fs::canonicalize::<PathBuf>([s, "src"].iter().collect()).unwrap();
+                let path = & canonical_to_path(&p);
+                let parser_path = canonical_to_path(&p.join("parser.c"));
+                cc::Build::new().include(path).file(parser_path).compile(format!("tree-sitter-{}", lang).as_str());
+                if p.join("scanner.cc").exists() {
+                    let scanner_path = canonical_to_path(&p.join("scanner.cc"));
+                    cc::Build::new().cpp(true).include(path).file(scanner_path).compile(format!("tree-sitter-{}-scanner", lang).as_str());
                 }
-                if path.join("scanner.c").exists() {
-                    cc::Build::new().file(path.join("scanner.c")).compile(format!("tree-sitter-{}-scanner", lang).as_str());
+                if p.join("scanner.c").exists() {
+                    let scanner_path = canonical_to_path(&p.join("scanner.c"));
+                    cc::Build::new().include(path).file(scanner_path).compile(format!("tree-sitter-{}-scanner", lang).as_str());
                 }
             }
         }
