@@ -28,14 +28,14 @@ fn add_languages() {
                 let p: PathBuf = std::fs::canonicalize::<PathBuf>([s, "src"].iter().collect()).unwrap();
                 let path = & canonical_to_path(&p);
                 let parser_path = canonical_to_path(&p.join("parser.c"));
-                cc::Build::new().include(path).file(parser_path).compile(format!("tree-sitter-{}", lang).as_str());
+                cc::Build::new().include(path).file(parser_path).warnings(false).compile(format!("tree-sitter-{}", lang).as_str());
                 if p.join("scanner.cc").exists() {
                     let scanner_path = canonical_to_path(&p.join("scanner.cc"));
-                    cc::Build::new().cpp(true).include(path).file(scanner_path).compile(format!("tree-sitter-{}-scanner", lang).as_str());
+                    cc::Build::new().cpp(true).include(path).file(scanner_path).warnings(false).compile(format!("tree-sitter-{}-scanner", lang).as_str());
                 }
                 if p.join("scanner.c").exists() {
                     let scanner_path = canonical_to_path(&p.join("scanner.c"));
-                    cc::Build::new().include(path).file(scanner_path).compile(format!("tree-sitter-{}-scanner", lang).as_str());
+                    cc::Build::new().include(path).file(scanner_path).warnings(false).compile(format!("tree-sitter-{}-scanner", lang).as_str());
                 }
             }
         }
