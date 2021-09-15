@@ -27,6 +27,7 @@ c sharp
 css
 elm
 go
+haskell
 html
 java
 javascript
