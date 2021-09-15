@@ -19,7 +19,7 @@ Then as a result, the `tree-sitter::Tree` will be returned, where we can access 
 
 The crate can also be run as a command: 
 ```bash
-tree_sitter_parsers <file1>.<ext1> [ <file2>.<ext2> ... ]
+tree-sitter-parser <file1>.<ext1> [ <file2>.<ext2> ... ]
 ```
 where `<file>` and `<ext>` are respectively the filename and extension names. The command will turn the input argument files into the ASTs corresponding to the file extension names.
 
