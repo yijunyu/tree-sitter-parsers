@@ -1,6 +1,6 @@
 [package]
 name = "tree-sitter-parsers"
-version = "0.0.4"
+version = "0.0.5"
 authors = ["Yijun Yu <yijun.yu@huawei.com>"]
 edition = "2018"
 license = "Apache-2.0 OR MIT"
@@ -11,6 +11,10 @@ keywords = ["parser", "tree-sitter"]
 categories = ["development-tools::procedural-macro-helpers", "encoding"]
 readme = "README.md"
 description = "Preinstallation of tree-sitter parsers of multiple languages for Rust projects"
+
+[[bin]]
+name = "tree-sitter-parser"
+path = "src/main.rs"
 
 [dependencies]
 tree-sitter = "0.20.0"
