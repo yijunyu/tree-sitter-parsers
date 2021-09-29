@@ -2,10 +2,10 @@ rm -rf dist/*
 python3 setup.py sdist bdist_wheel
 if [ "$1" == "main" ]; then
 twine upload dist/tree_sitter_parsers-*
-pip uninstall tree_sitter_parsers -y
-pip install tree_sitter_parsers
+pip3 uninstall tree_sitter_parsers -y
+pip3 install tree_sitter_parsers
 else
-pip uninstall tree_sitter_parsers -y
-pip install dist/tree_sitter_parsers-*-py3-none-any.whl
-python -c "import tree_sitter_parsers"
+pip3 uninstall tree_sitter_parsers -y
+pip3 install dist/tree_sitter_parsers-*-py3-none-any.whl
+python3 -c "import tree_sitter_parsers"
 fi

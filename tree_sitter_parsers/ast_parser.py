@@ -38,7 +38,7 @@ class ASTParser():
         cd = os.getcwd()
         plat = platform.system()     
         p = path.join(home, ".tree-sitter")
-        if not path.exists(p):
+        if not path.exists(path.join(p, "tree-sitter-parsers-" + plat)):
             os.makedirs(p, exist_ok=True)
             zip_url = "https://github.com/yijunyu/tree-sitter-parsers/archive/refs/heads/" + plat + ".zip"
             parsers_target = os.path.join(p, plat + ".zip")
@@ -50,7 +50,15 @@ class ASTParser():
             except: 
                 plat = "main"
                 # build from scratch
+                zip_url = "https://github.com/yijunyu/tree-sitter-parsers/archive/refs/heads/" + plat + ".zip"
+                parsers_target = os.path.join(p, plat + ".zip")
+                # download from precompiled binaries
+                download_url(zip_url, parsers_target)
+                with zipfile.ZipFile(parsers_target, 'r') as zip_ref:
+          	        zip_ref.extractall(p)
                 langs = []
+                plat = platform.system()     
+                shutil.move(path.join(p, "tree-sitter-parsers-main"), path.join(p, "tree-sitter-parsers-" + plat))
                 os.chdir(path.join(p, "tree-sitter-parsers-" + plat))
                 for file in glob.glob("tree-sitter-*"):        
                     lang = file.split("-")[2]

@@ -6,7 +6,7 @@ install_requires=[
 
 setup(
   name = 'tree_sitter_parsers',
-  version = "0.0.3",
+  version = "0.0.4",
   py_modules = ['tree_sitter_parsers'],
   description = 'generate the shared libraries of tree-sitter parsers',
   author = 'Yijun Yu and Nghi D. Q. Bui',
