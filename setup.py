@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 install_requires=[
-    "tree_sitter==0.19.0"
+    "tree_sitter>=0.19.0"
 ]
 
 setup(
   name = 'tree_sitter_parsers',
-  version = "0.0.5",
+  version = "0.0.6",
   py_modules = ['tree_sitter_parsers'],
   description = 'generate the shared libraries of tree-sitter parsers',
   author = 'Yijun Yu and Nghi D. Q. Bui',
