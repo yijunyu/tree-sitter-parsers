@@ -38,7 +38,7 @@ class ASTParser():
         cd = os.getcwd()
         plat = platform.system()     
         p = path.join(home, ".tree-sitter")
-        if not path.exists(path.join(p, "tree-sitter-parsers-" + plat)):
+        if not path.exists(path.join(p, "bin")):
             os.makedirs(p, exist_ok=True)
             zip_url = "https://github.com/yijunyu/tree-sitter-parsers/archive/refs/heads/" + plat + ".zip"
             parsers_target = os.path.join(p, plat + ".zip")
@@ -47,19 +47,18 @@ class ASTParser():
                 download_url(zip_url, parsers_target)
                 with zipfile.ZipFile(parsers_target, 'r') as zip_ref:
           	        zip_ref.extractall(p)
+                shutil.move(path.join(p, "tree-sitter-parsers-" + plat), path.join(p, "bin"))
             except: 
-                plat = "main"
                 # build from scratch
-                zip_url = "https://github.com/yijunyu/tree-sitter-parsers/archive/refs/heads/" + plat + ".zip"
-                parsers_target = os.path.join(p, plat + ".zip")
+                zip_url = "https://github.com/yijunyu/tree-sitter-parsers/archive/refs/heads/main.zip"
+                parsers_target = os.path.join(p, "main.zip")
                 # download from precompiled binaries
                 download_url(zip_url, parsers_target)
                 with zipfile.ZipFile(parsers_target, 'r') as zip_ref:
           	        zip_ref.extractall(p)
                 langs = []
-                plat = platform.system()     
-                shutil.move(path.join(p, "tree-sitter-parsers-main"), path.join(p, "tree-sitter-parsers-" + plat))
-                os.chdir(path.join(p, "tree-sitter-parsers-" + plat))
+                shutil.move(path.join(p, "tree-sitter-parsers-main"), path.join(p, "bin"))
+                os.chdir(path.join(p, "bin"))
                 for file in glob.glob("tree-sitter-*"):        
                     lang = file.split("-")[2]
                     if not "." in file.split("-")[3]: # c-sharp => c_sharp.so
@@ -71,12 +70,12 @@ class ASTParser():
                         # Include one or more languages
                         langs
                     )
-        os.chdir(path.join(p, "tree-sitter-parsers-" + plat))
+        os.chdir(path.join(p, "bin"))
         self.Languages = {}
         for file in glob.glob("*.so"):
           try:
             lang = os.path.splitext(file)[0]
-            self.Languages[lang] = Language(path.join(p, "tree-sitter-parsers-" + plat, file), lang)
+            self.Languages[lang] = Language(path.join(p, "bin", file), lang)
           except:
             print("An exception occurred to {}".format(lang))
         os.chdir(cd)
