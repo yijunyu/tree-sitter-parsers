@@ -71,6 +71,7 @@ class ASTParser():
                         langs
                     )
         if not os.path.exists(path.join(home, ".cache", "tree-sitter", "lib")):
+            os.mkdir(path.join(home, ".cache", "tree-sitter"))
             os.symlink(path.join(p, "bin"), path.join(home, ".cache", "tree-sitter", "lib")) # cache for tree-sitter-cli command itself on an gitpod.io instance
         if not os.path.exists(path.join(home, ".config", "tree-sitter", "config.json")):
             with open(path.join(home, ".config", "tree-sitter", "config.json"), 'w') as stream:
