@@ -70,7 +70,10 @@ class ASTParser():
                         # Include one or more languages
                         langs
                     )
-        shutil.copy(path.join(p, "bin"), path.join(home, ".cache", "tree-sitter", "bin")) # for tree-sitter-cli command itself on gitpod
+        if not os.path.exists(path.join(home, ".cache", "tree-sitter", "lib")):
+            os.symlink(path.join(p, "bin"), path.join(home, ".cache", "tree-sitter", "lib")) # for tree-sitter-cli command itself on gitpod
+        with open(path.join(home, ".config", "tree-sitter", "config.json"), 'w') as stream:
+            stream.write('{ "parser-directories": [ "%s/.tree-sitter/bin" ] }\n' % home)
         os.chdir(path.join(p, "bin"))
         self.Languages = {}
         for file in glob.glob("*.so"):
