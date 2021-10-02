@@ -70,6 +70,7 @@ class ASTParser():
                         # Include one or more languages
                         langs
                     )
+        shutil.copy(path.join(p, "bin"), path.join(home, ".cache", "tree-sitter", "bin")) # for tree-sitter-cli command itself on gitpod
         os.chdir(path.join(p, "bin"))
         self.Languages = {}
         for file in glob.glob("*.so"):
