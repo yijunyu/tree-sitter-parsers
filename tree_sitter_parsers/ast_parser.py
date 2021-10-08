@@ -2,7 +2,6 @@ from os import path
 from tree_sitter import Language, Parser
 from pathlib import Path
 import glob, os
-import numpy as np
 import logging
 import urllib.request
 from urllib3.exceptions import InsecureRequestWarning
