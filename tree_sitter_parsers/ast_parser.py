@@ -70,12 +70,13 @@ class ASTParser():
                         # Include one or more languages
                         langs
                     )
-        if not os.path.exists(path.join(home, ".cache")):
-            os.mkdir(path.join(home, ".cache")) 
-        if not os.path.exists(path.join(home, ".cache", "tree-sitter")):
-            os.mkdir(path.join(home, ".cache", "tree-sitter")) 
-        if not os.path.exists(path.join(home, ".cache", "tree-sitter", "lib")):
-            os.symlink(path.join(p, "bin"), path.join(home, ".cache", "tree-sitter", "lib")) # cache for tree-sitter-cli command itself on an gitpod.io instance
+        if not plat == "Windows":
+            if not os.path.exists(path.join(home, ".cache")):
+                os.mkdir(path.join(home, ".cache")) 
+            if not os.path.exists(path.join(home, ".cache", "tree-sitter")):
+                os.mkdir(path.join(home, ".cache", "tree-sitter"))
+            if not os.path.exists(path.join(home, ".cache", "tree-sitter", "lib")):
+                os.symlink(path.join(p, "bin"), path.join(home, ".cache", "tree-sitter", "lib")) # cache for tree-sitter-cli command itself on an gitpod.io instance
         if not os.path.exists(path.join(home, ".config")):
             os.mkdir(path.join(home, ".config")) 
         if not os.path.exists(path.join(home, ".config", "tree-sitter")):
