@@ -1,5 +1,5 @@
 {
-  "name": "assembly",
+  "name": "asm",
   "rules": {
     "prog": {
       "type": "REPEAT",

@@ -9,6 +9,7 @@ from tqdm import tqdm
 import zipfile
 import shutil
 import platform
+import traceback
 
 import ssl
 
@@ -87,9 +88,12 @@ class ASTParser():
         self.Languages = {}
         for file in glob.glob("*.so"):
           try:
+            print(file)
             lang = os.path.splitext(file)[0]
+            print(lang)
             self.Languages[lang] = Language(path.join(p, "bin", file), lang)
           except:
+            print(traceback.format_exc())
             print("An exception occurred to {}".format(lang))
         os.chdir(cd)
         self.parser = Parser()

@@ -1,5 +1,5 @@
 module.exports = grammar({
-    name: 'assembly', //Applicable for our dataset
+    name: 'asm', //Applicable for our dataset
 
     //word: $ => $.identifier, //这行的存在会产生Undefined symbol `ReferenceError`
 
