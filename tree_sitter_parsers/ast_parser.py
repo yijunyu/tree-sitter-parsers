@@ -88,9 +88,9 @@ class ASTParser():
         self.Languages = {}
         for file in glob.glob("*.so"):
           try:
-            print(file)
+            # print(file)
             lang = os.path.splitext(file)[0]
-            print(lang)
+            # print(lang)
             self.Languages[lang] = Language(path.join(p, "bin", file), lang)
           except:
             print(traceback.format_exc())
