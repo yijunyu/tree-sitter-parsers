@@ -1,0 +1,1850 @@
+[
+  {
+    "type": "instruction_four_operands",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "opcodes_four_operands",
+          "named": true
+        },
+        {
+          "type": "operand",
+          "named": true
+        },
+        {
+          "type": "two_bytes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "instruction_one_operand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "opcodes_one_operand",
+          "named": true
+        },
+        {
+          "type": "operand",
+          "named": true
+        },
+        {
+          "type": "two_bytes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "instruction_six_operands",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "opcodes_six_operands",
+          "named": true
+        },
+        {
+          "type": "operand",
+          "named": true
+        },
+        {
+          "type": "two_bytes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "instruction_three_operands",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "opcodes_three_operands",
+          "named": true
+        },
+        {
+          "type": "operand",
+          "named": true
+        },
+        {
+          "type": "two_bytes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "instruction_two_operands",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "opcodes_two_operands",
+          "named": true
+        },
+        {
+          "type": "operand",
+          "named": true
+        },
+        {
+          "type": "two_bytes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "instruction_undetermined_operands",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "opcodes_undetermined_operands",
+          "named": true
+        },
+        {
+          "type": "operand",
+          "named": true
+        },
+        {
+          "type": "two_bytes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "opcodes_four_operands",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "opcodes_one_operand",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "opcodes_six_operands",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "opcodes_three_operands",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "opcodes_two_operands",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "opcodes_undetermined_operands",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "operand",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prog",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "instruction_four_operands",
+          "named": true
+        },
+        {
+          "type": "instruction_one_operand",
+          "named": true
+        },
+        {
+          "type": "instruction_six_operands",
+          "named": true
+        },
+        {
+          "type": "instruction_three_operands",
+          "named": true
+        },
+        {
+          "type": "instruction_two_operands",
+          "named": true
+        },
+        {
+          "type": "instruction_undetermined_operands",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "adc",
+    "named": false
+  },
+  {
+    "type": "adcx",
+    "named": false
+  },
+  {
+    "type": "add",
+    "named": false
+  },
+  {
+    "type": "addb",
+    "named": false
+  },
+  {
+    "type": "addl",
+    "named": false
+  },
+  {
+    "type": "addq",
+    "named": false
+  },
+  {
+    "type": "addr32",
+    "named": false
+  },
+  {
+    "type": "addsd",
+    "named": false
+  },
+  {
+    "type": "addss",
+    "named": false
+  },
+  {
+    "type": "addw",
+    "named": false
+  },
+  {
+    "type": "adox",
+    "named": false
+  },
+  {
+    "type": "aesdec",
+    "named": false
+  },
+  {
+    "type": "aesdeclast",
+    "named": false
+  },
+  {
+    "type": "aesenc",
+    "named": false
+  },
+  {
+    "type": "aesenclast",
+    "named": false
+  },
+  {
+    "type": "aeskeygenassist",
+    "named": false
+  },
+  {
+    "type": "and",
+    "named": false
+  },
+  {
+    "type": "andb",
+    "named": false
+  },
+  {
+    "type": "andl",
+    "named": false
+  },
+  {
+    "type": "andn",
+    "named": false
+  },
+  {
+    "type": "andpd",
+    "named": false
+  },
+  {
+    "type": "andps",
+    "named": false
+  },
+  {
+    "type": "andq",
+    "named": false
+  },
+  {
+    "type": "andw",
+    "named": false
+  },
+  {
+    "type": "blendvps",
+    "named": false
+  },
+  {
+    "type": "bsf",
+    "named": false
+  },
+  {
+    "type": "bsr",
+    "named": false
+  },
+  {
+    "type": "bswap",
+    "named": false
+  },
+  {
+    "type": "bt",
+    "named": false
+  },
+  {
+    "type": "btl",
+    "named": false
+  },
+  {
+    "type": "btr",
+    "named": false
+  },
+  {
+    "type": "bts",
+    "named": false
+  },
+  {
+    "type": "callq",
+    "named": false
+  },
+  {
+    "type": "cbtw",
+    "named": false
+  },
+  {
+    "type": "cltd",
+    "named": false
+  },
+  {
+    "type": "cltq",
+    "named": false
+  },
+  {
+    "type": "cmova",
+    "named": false
+  },
+  {
+    "type": "cmovae",
+    "named": false
+  },
+  {
+    "type": "cmovb",
+    "named": false
+  },
+  {
+    "type": "cmovbe",
+    "named": false
+  },
+  {
+    "type": "cmove",
+    "named": false
+  },
+  {
+    "type": "cmovg",
+    "named": false
+  },
+  {
+    "type": "cmovge",
+    "named": false
+  },
+  {
+    "type": "cmovl",
+    "named": false
+  },
+  {
+    "type": "cmovle",
+    "named": false
+  },
+  {
+    "type": "cmovne",
+    "named": false
+  },
+  {
+    "type": "cmovns",
+    "named": false
+  },
+  {
+    "type": "cmovo",
+    "named": false
+  },
+  {
+    "type": "cmovp",
+    "named": false
+  },
+  {
+    "type": "cmovs",
+    "named": false
+  },
+  {
+    "type": "cmp",
+    "named": false
+  },
+  {
+    "type": "cmpb",
+    "named": false
+  },
+  {
+    "type": "cmpl",
+    "named": false
+  },
+  {
+    "type": "cmpq",
+    "named": false
+  },
+  {
+    "type": "cmpw",
+    "named": false
+  },
+  {
+    "type": "comisd",
+    "named": false
+  },
+  {
+    "type": "comiss",
+    "named": false
+  },
+  {
+    "type": "cpuid",
+    "named": false
+  },
+  {
+    "type": "cqto",
+    "named": false
+  },
+  {
+    "type": "cvtsd2ss",
+    "named": false
+  },
+  {
+    "type": "cvtsi2sd",
+    "named": false
+  },
+  {
+    "type": "cvtsi2sdl",
+    "named": false
+  },
+  {
+    "type": "cvtsi2sdq",
+    "named": false
+  },
+  {
+    "type": "cvtsi2ss",
+    "named": false
+  },
+  {
+    "type": "cvtsi2ssl",
+    "named": false
+  },
+  {
+    "type": "cvtss2sd",
+    "named": false
+  },
+  {
+    "type": "cvttsd2si",
+    "named": false
+  },
+  {
+    "type": "cvttss2si",
+    "named": false
+  },
+  {
+    "type": "cwtd",
+    "named": false
+  },
+  {
+    "type": "cwtl",
+    "named": false
+  },
+  {
+    "type": "data16",
+    "named": false
+  },
+  {
+    "type": "dec",
+    "named": false
+  },
+  {
+    "type": "div",
+    "named": false
+  },
+  {
+    "type": "divl",
+    "named": false
+  },
+  {
+    "type": "divq",
+    "named": false
+  },
+  {
+    "type": "divsd",
+    "named": false
+  },
+  {
+    "type": "divss",
+    "named": false
+  },
+  {
+    "type": "endbr64",
+    "named": false
+  },
+  {
+    "type": "femms",
+    "named": false
+  },
+  {
+    "type": "fildl",
+    "named": false
+  },
+  {
+    "type": "fldt",
+    "named": false
+  },
+  {
+    "type": "fmulp",
+    "named": false
+  },
+  {
+    "type": "fs",
+    "named": false
+  },
+  {
+    "type": "fstpl",
+    "named": false
+  },
+  {
+    "type": "gs",
+    "named": false
+  },
+  {
+    "type": "idiv",
+    "named": false
+  },
+  {
+    "type": "idivl",
+    "named": false
+  },
+  {
+    "type": "imul",
+    "named": false
+  },
+  {
+    "type": "inc",
+    "named": false
+  },
+  {
+    "type": "incl",
+    "named": false
+  },
+  {
+    "type": "insb",
+    "named": false
+  },
+  {
+    "type": "insl",
+    "named": false
+  },
+  {
+    "type": "ja",
+    "named": false
+  },
+  {
+    "type": "jae",
+    "named": false
+  },
+  {
+    "type": "jb",
+    "named": false
+  },
+  {
+    "type": "jbe",
+    "named": false
+  },
+  {
+    "type": "je",
+    "named": false
+  },
+  {
+    "type": "jg",
+    "named": false
+  },
+  {
+    "type": "jge",
+    "named": false
+  },
+  {
+    "type": "jl",
+    "named": false
+  },
+  {
+    "type": "jle",
+    "named": false
+  },
+  {
+    "type": "jmp",
+    "named": false
+  },
+  {
+    "type": "jmpq",
+    "named": false
+  },
+  {
+    "type": "jne",
+    "named": false
+  },
+  {
+    "type": "jno",
+    "named": false
+  },
+  {
+    "type": "jns",
+    "named": false
+  },
+  {
+    "type": "jo",
+    "named": false
+  },
+  {
+    "type": "jp",
+    "named": false
+  },
+  {
+    "type": "jrcxz",
+    "named": false
+  },
+  {
+    "type": "js",
+    "named": false
+  },
+  {
+    "type": "kmovw",
+    "named": false
+  },
+  {
+    "type": "knotw",
+    "named": false
+  },
+  {
+    "type": "lea",
+    "named": false
+  },
+  {
+    "type": "leaveq",
+    "named": false
+  },
+  {
+    "type": "lock",
+    "named": false
+  },
+  {
+    "type": "maxsd",
+    "named": false
+  },
+  {
+    "type": "maxss",
+    "named": false
+  },
+  {
+    "type": "mfence",
+    "named": false
+  },
+  {
+    "type": "minsd",
+    "named": false
+  },
+  {
+    "type": "minss",
+    "named": false
+  },
+  {
+    "type": "mov",
+    "named": false
+  },
+  {
+    "type": "movabs",
+    "named": false
+  },
+  {
+    "type": "movapd",
+    "named": false
+  },
+  {
+    "type": "movaps",
+    "named": false
+  },
+  {
+    "type": "movb",
+    "named": false
+  },
+  {
+    "type": "movbe",
+    "named": false
+  },
+  {
+    "type": "movd",
+    "named": false
+  },
+  {
+    "type": "movdqa",
+    "named": false
+  },
+  {
+    "type": "movdqu",
+    "named": false
+  },
+  {
+    "type": "movhlps",
+    "named": false
+  },
+  {
+    "type": "movhps",
+    "named": false
+  },
+  {
+    "type": "movl",
+    "named": false
+  },
+  {
+    "type": "movq",
+    "named": false
+  },
+  {
+    "type": "movsb",
+    "named": false
+  },
+  {
+    "type": "movsbl",
+    "named": false
+  },
+  {
+    "type": "movsbq",
+    "named": false
+  },
+  {
+    "type": "movsbw",
+    "named": false
+  },
+  {
+    "type": "movsd",
+    "named": false
+  },
+  {
+    "type": "movslq",
+    "named": false
+  },
+  {
+    "type": "movss",
+    "named": false
+  },
+  {
+    "type": "movswl",
+    "named": false
+  },
+  {
+    "type": "movswq",
+    "named": false
+  },
+  {
+    "type": "movups",
+    "named": false
+  },
+  {
+    "type": "movw",
+    "named": false
+  },
+  {
+    "type": "movzbl",
+    "named": false
+  },
+  {
+    "type": "movzbq",
+    "named": false
+  },
+  {
+    "type": "movzbw",
+    "named": false
+  },
+  {
+    "type": "movzwl",
+    "named": false
+  },
+  {
+    "type": "mul",
+    "named": false
+  },
+  {
+    "type": "mulb",
+    "named": false
+  },
+  {
+    "type": "mull",
+    "named": false
+  },
+  {
+    "type": "mulq",
+    "named": false
+  },
+  {
+    "type": "mulsd",
+    "named": false
+  },
+  {
+    "type": "mulss",
+    "named": false
+  },
+  {
+    "type": "mulw",
+    "named": false
+  },
+  {
+    "type": "mulx",
+    "named": false
+  },
+  {
+    "type": "neg",
+    "named": false
+  },
+  {
+    "type": "negl",
+    "named": false
+  },
+  {
+    "type": "negq",
+    "named": false
+  },
+  {
+    "type": "nop",
+    "named": false
+  },
+  {
+    "type": "nopl",
+    "named": false
+  },
+  {
+    "type": "nopw",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "notl",
+    "named": false
+  },
+  {
+    "type": "notrack",
+    "named": false
+  },
+  {
+    "type": "notw",
+    "named": false
+  },
+  {
+    "type": "or",
+    "named": false
+  },
+  {
+    "type": "orb",
+    "named": false
+  },
+  {
+    "type": "orl",
+    "named": false
+  },
+  {
+    "type": "orq",
+    "named": false
+  },
+  {
+    "type": "orw",
+    "named": false
+  },
+  {
+    "type": "outsb",
+    "named": false
+  },
+  {
+    "type": "outsl",
+    "named": false
+  },
+  {
+    "type": "packuswb",
+    "named": false
+  },
+  {
+    "type": "paddd",
+    "named": false
+  },
+  {
+    "type": "paddq",
+    "named": false
+  },
+  {
+    "type": "paddw",
+    "named": false
+  },
+  {
+    "type": "palignr",
+    "named": false
+  },
+  {
+    "type": "pand",
+    "named": false
+  },
+  {
+    "type": "pandn",
+    "named": false
+  },
+  {
+    "type": "pblendw",
+    "named": false
+  },
+  {
+    "type": "pclmulhqhqdq",
+    "named": false
+  },
+  {
+    "type": "pclmullqhqdq",
+    "named": false
+  },
+  {
+    "type": "pclmullqlqdq",
+    "named": false
+  },
+  {
+    "type": "pcmpeqb",
+    "named": false
+  },
+  {
+    "type": "pcmpeqd",
+    "named": false
+  },
+  {
+    "type": "pcmpgtd",
+    "named": false
+  },
+  {
+    "type": "pextrb",
+    "named": false
+  },
+  {
+    "type": "pextrq",
+    "named": false
+  },
+  {
+    "type": "pextrw",
+    "named": false
+  },
+  {
+    "type": "pinsrb",
+    "named": false
+  },
+  {
+    "type": "pinsrd",
+    "named": false
+  },
+  {
+    "type": "pinsrw",
+    "named": false
+  },
+  {
+    "type": "pmaddubsw",
+    "named": false
+  },
+  {
+    "type": "pmaddwd",
+    "named": false
+  },
+  {
+    "type": "pmovmskb",
+    "named": false
+  },
+  {
+    "type": "pmuludq",
+    "named": false
+  },
+  {
+    "type": "pop",
+    "named": false
+  },
+  {
+    "type": "popcnt",
+    "named": false
+  },
+  {
+    "type": "por",
+    "named": false
+  },
+  {
+    "type": "prefetcht0",
+    "named": false
+  },
+  {
+    "type": "prefetcht1",
+    "named": false
+  },
+  {
+    "type": "pshufb",
+    "named": false
+  },
+  {
+    "type": "pshufd",
+    "named": false
+  },
+  {
+    "type": "pshufhw",
+    "named": false
+  },
+  {
+    "type": "pshuflw",
+    "named": false
+  },
+  {
+    "type": "pslld",
+    "named": false
+  },
+  {
+    "type": "pslldq",
+    "named": false
+  },
+  {
+    "type": "psllq",
+    "named": false
+  },
+  {
+    "type": "psrad",
+    "named": false
+  },
+  {
+    "type": "psrld",
+    "named": false
+  },
+  {
+    "type": "psrldq",
+    "named": false
+  },
+  {
+    "type": "psrlq",
+    "named": false
+  },
+  {
+    "type": "psrlw",
+    "named": false
+  },
+  {
+    "type": "psubb",
+    "named": false
+  },
+  {
+    "type": "psubd",
+    "named": false
+  },
+  {
+    "type": "psubq",
+    "named": false
+  },
+  {
+    "type": "psubusb",
+    "named": false
+  },
+  {
+    "type": "psubusw",
+    "named": false
+  },
+  {
+    "type": "punpckhbw",
+    "named": false
+  },
+  {
+    "type": "punpckhdq",
+    "named": false
+  },
+  {
+    "type": "punpckhqdq",
+    "named": false
+  },
+  {
+    "type": "punpckhwd",
+    "named": false
+  },
+  {
+    "type": "punpcklbw",
+    "named": false
+  },
+  {
+    "type": "punpckldq",
+    "named": false
+  },
+  {
+    "type": "punpcklqdq",
+    "named": false
+  },
+  {
+    "type": "punpcklwd",
+    "named": false
+  },
+  {
+    "type": "push",
+    "named": false
+  },
+  {
+    "type": "pushq",
+    "named": false
+  },
+  {
+    "type": "pxor",
+    "named": false
+  },
+  {
+    "type": "re",
+    "named": false
+  },
+  {
+    "type": "rep",
+    "named": false
+  },
+  {
+    "type": "repnz",
+    "named": false
+  },
+  {
+    "type": "repz",
+    "named": false
+  },
+  {
+    "type": "retq",
+    "named": false
+  },
+  {
+    "type": "rex",
+    "named": false
+  },
+  {
+    "type": "rex.B",
+    "named": false
+  },
+  {
+    "type": "rex.RB",
+    "named": false
+  },
+  {
+    "type": "rex.RXB",
+    "named": false
+  },
+  {
+    "type": "rex.W",
+    "named": false
+  },
+  {
+    "type": "rex.WB",
+    "named": false
+  },
+  {
+    "type": "rex.WRB",
+    "named": false
+  },
+  {
+    "type": "rex.WRXB",
+    "named": false
+  },
+  {
+    "type": "rex.XB",
+    "named": false
+  },
+  {
+    "type": "rol",
+    "named": false
+  },
+  {
+    "type": "roll",
+    "named": false
+  },
+  {
+    "type": "ror",
+    "named": false
+  },
+  {
+    "type": "rorl",
+    "named": false
+  },
+  {
+    "type": "rorx",
+    "named": false
+  },
+  {
+    "type": "sar",
+    "named": false
+  },
+  {
+    "type": "sarl",
+    "named": false
+  },
+  {
+    "type": "sarx",
+    "named": false
+  },
+  {
+    "type": "sbb",
+    "named": false
+  },
+  {
+    "type": "seta",
+    "named": false
+  },
+  {
+    "type": "setae",
+    "named": false
+  },
+  {
+    "type": "setb",
+    "named": false
+  },
+  {
+    "type": "setbe",
+    "named": false
+  },
+  {
+    "type": "sete",
+    "named": false
+  },
+  {
+    "type": "setg",
+    "named": false
+  },
+  {
+    "type": "setge",
+    "named": false
+  },
+  {
+    "type": "setl",
+    "named": false
+  },
+  {
+    "type": "setle",
+    "named": false
+  },
+  {
+    "type": "setne",
+    "named": false
+  },
+  {
+    "type": "setnp",
+    "named": false
+  },
+  {
+    "type": "setns",
+    "named": false
+  },
+  {
+    "type": "seto",
+    "named": false
+  },
+  {
+    "type": "setp",
+    "named": false
+  },
+  {
+    "type": "sha1msg1",
+    "named": false
+  },
+  {
+    "type": "sha1msg2",
+    "named": false
+  },
+  {
+    "type": "sha1nexte",
+    "named": false
+  },
+  {
+    "type": "sha1rnds4",
+    "named": false
+  },
+  {
+    "type": "shl",
+    "named": false
+  },
+  {
+    "type": "shld",
+    "named": false
+  },
+  {
+    "type": "shll",
+    "named": false
+  },
+  {
+    "type": "shlq",
+    "named": false
+  },
+  {
+    "type": "shlx",
+    "named": false
+  },
+  {
+    "type": "shr",
+    "named": false
+  },
+  {
+    "type": "shrd",
+    "named": false
+  },
+  {
+    "type": "shrl",
+    "named": false
+  },
+  {
+    "type": "shrq",
+    "named": false
+  },
+  {
+    "type": "shrx",
+    "named": false
+  },
+  {
+    "type": "shufpd",
+    "named": false
+  },
+  {
+    "type": "shufps",
+    "named": false
+  },
+  {
+    "type": "ss",
+    "named": false
+  },
+  {
+    "type": "sub",
+    "named": false
+  },
+  {
+    "type": "subb",
+    "named": false
+  },
+  {
+    "type": "subl",
+    "named": false
+  },
+  {
+    "type": "subpd",
+    "named": false
+  },
+  {
+    "type": "subq",
+    "named": false
+  },
+  {
+    "type": "subsd",
+    "named": false
+  },
+  {
+    "type": "subss",
+    "named": false
+  },
+  {
+    "type": "subw",
+    "named": false
+  },
+  {
+    "type": "test",
+    "named": false
+  },
+  {
+    "type": "testb",
+    "named": false
+  },
+  {
+    "type": "testl",
+    "named": false
+  },
+  {
+    "type": "two_bytes",
+    "named": true
+  },
+  {
+    "type": "tzcnt",
+    "named": false
+  },
+  {
+    "type": "ucomisd",
+    "named": false
+  },
+  {
+    "type": "ucomiss",
+    "named": false
+  },
+  {
+    "type": "ud2",
+    "named": false
+  },
+  {
+    "type": "unpckhpd",
+    "named": false
+  },
+  {
+    "type": "vaesenc",
+    "named": false
+  },
+  {
+    "type": "vaesenclast",
+    "named": false
+  },
+  {
+    "type": "vblendps",
+    "named": false
+  },
+  {
+    "type": "vblendvps",
+    "named": false
+  },
+  {
+    "type": "vbroadcasti128",
+    "named": false
+  },
+  {
+    "type": "vbroadcasti32x4",
+    "named": false
+  },
+  {
+    "type": "vbroadcastss",
+    "named": false
+  },
+  {
+    "type": "vcvtusi2sd",
+    "named": false
+  },
+  {
+    "type": "vdivsd",
+    "named": false
+  },
+  {
+    "type": "vextracti128",
+    "named": false
+  },
+  {
+    "type": "vextracti32x4",
+    "named": false
+  },
+  {
+    "type": "vinsertf128",
+    "named": false
+  },
+  {
+    "type": "vinserti128",
+    "named": false
+  },
+  {
+    "type": "vinserti32x4",
+    "named": false
+  },
+  {
+    "type": "vinserti64x4",
+    "named": false
+  },
+  {
+    "type": "vmovapd",
+    "named": false
+  },
+  {
+    "type": "vmovaps",
+    "named": false
+  },
+  {
+    "type": "vmovd",
+    "named": false
+  },
+  {
+    "type": "vmovdqa",
+    "named": false
+  },
+  {
+    "type": "vmovdqa32",
+    "named": false
+  },
+  {
+    "type": "vmovdqa64",
+    "named": false
+  },
+  {
+    "type": "vmovdqu",
+    "named": false
+  },
+  {
+    "type": "vmovdqu32",
+    "named": false
+  },
+  {
+    "type": "vmovdqu64",
+    "named": false
+  },
+  {
+    "type": "vmovq",
+    "named": false
+  },
+  {
+    "type": "vmovsd",
+    "named": false
+  },
+  {
+    "type": "vmovss",
+    "named": false
+  },
+  {
+    "type": "vmovups",
+    "named": false
+  },
+  {
+    "type": "vmulsd",
+    "named": false
+  },
+  {
+    "type": "vpackusdw",
+    "named": false
+  },
+  {
+    "type": "vpaddb",
+    "named": false
+  },
+  {
+    "type": "vpaddd",
+    "named": false
+  },
+  {
+    "type": "vpaddq",
+    "named": false
+  },
+  {
+    "type": "vpaddw",
+    "named": false
+  },
+  {
+    "type": "vpalignr",
+    "named": false
+  },
+  {
+    "type": "vpand",
+    "named": false
+  },
+  {
+    "type": "vpblendd",
+    "named": false
+  },
+  {
+    "type": "vpblendmd",
+    "named": false
+  },
+  {
+    "type": "vpbroadcastd",
+    "named": false
+  },
+  {
+    "type": "vpbroadcastq",
+    "named": false
+  },
+  {
+    "type": "vpclmulhqhqdq",
+    "named": false
+  },
+  {
+    "type": "vpclmulhqlqdq",
+    "named": false
+  },
+  {
+    "type": "vpclmullqhqdq",
+    "named": false
+  },
+  {
+    "type": "vpclmullqlqdq",
+    "named": false
+  },
+  {
+    "type": "vpcmpgtd",
+    "named": false
+  },
+  {
+    "type": "vpcmpltud",
+    "named": false
+  },
+  {
+    "type": "vperm2f128",
+    "named": false
+  },
+  {
+    "type": "vperm2i128",
+    "named": false
+  },
+  {
+    "type": "vpermd",
+    "named": false
+  },
+  {
+    "type": "vpermi2d",
+    "named": false
+  },
+  {
+    "type": "vpermq",
+    "named": false
+  },
+  {
+    "type": "vpermt2d",
+    "named": false
+  },
+  {
+    "type": "vpextrw",
+    "named": false
+  },
+  {
+    "type": "vpinsrb",
+    "named": false
+  },
+  {
+    "type": "vpinsrd",
+    "named": false
+  },
+  {
+    "type": "vpinsrq",
+    "named": false
+  },
+  {
+    "type": "vpinsrw",
+    "named": false
+  },
+  {
+    "type": "vpmaddubsw",
+    "named": false
+  },
+  {
+    "type": "vpmaddwd",
+    "named": false
+  },
+  {
+    "type": "vpmullw",
+    "named": false
+  },
+  {
+    "type": "vpmuludq",
+    "named": false
+  },
+  {
+    "type": "vpor",
+    "named": false
+  },
+  {
+    "type": "vprord",
+    "named": false
+  },
+  {
+    "type": "vprorq",
+    "named": false
+  },
+  {
+    "type": "vpshufb",
+    "named": false
+  },
+  {
+    "type": "vpshufd",
+    "named": false
+  },
+  {
+    "type": "vpslld",
+    "named": false
+  },
+  {
+    "type": "vpslldq",
+    "named": false
+  },
+  {
+    "type": "vpsllq",
+    "named": false
+  },
+  {
+    "type": "vpsllw",
+    "named": false
+  },
+  {
+    "type": "vpsrld",
+    "named": false
+  },
+  {
+    "type": "vpsrldq",
+    "named": false
+  },
+  {
+    "type": "vpsrlq",
+    "named": false
+  },
+  {
+    "type": "vpsrlw",
+    "named": false
+  },
+  {
+    "type": "vpsubd",
+    "named": false
+  },
+  {
+    "type": "vpsubq",
+    "named": false
+  },
+  {
+    "type": "vpsubusw",
+    "named": false
+  },
+  {
+    "type": "vpsubw",
+    "named": false
+  },
+  {
+    "type": "vpunpckhdq",
+    "named": false
+  },
+  {
+    "type": "vpunpckhqdq",
+    "named": false
+  },
+  {
+    "type": "vpunpckhwd",
+    "named": false
+  },
+  {
+    "type": "vpunpckldq",
+    "named": false
+  },
+  {
+    "type": "vpunpcklqdq",
+    "named": false
+  },
+  {
+    "type": "vpunpcklwd",
+    "named": false
+  },
+  {
+    "type": "vpxor",
+    "named": false
+  },
+  {
+    "type": "vpxord",
+    "named": false
+  },
+  {
+    "type": "vshufi32x4",
+    "named": false
+  },
+  {
+    "type": "vshufi64x2",
+    "named": false
+  },
+  {
+    "type": "vshufps",
+    "named": false
+  },
+  {
+    "type": "vsubsd",
+    "named": false
+  },
+  {
+    "type": "vucomisd",
+    "named": false
+  },
+  {
+    "type": "vucomiss",
+    "named": false
+  },
+  {
+    "type": "vunpckhpd",
+    "named": false
+  },
+  {
+    "type": "vunpckhps",
+    "named": false
+  },
+  {
+    "type": "vunpcklpd",
+    "named": false
+  },
+  {
+    "type": "vunpcklps",
+    "named": false
+  },
+  {
+    "type": "vxorps",
+    "named": false
+  },
+  {
+    "type": "vzeroall",
+    "named": false
+  },
+  {
+    "type": "vzeroupper",
+    "named": false
+  },
+  {
+    "type": "xchg",
+    "named": false
+  },
+  {
+    "type": "xgetbv",
+    "named": false
+  },
+  {
+    "type": "xor",
+    "named": false
+  },
+  {
+    "type": "xorl",
+    "named": false
+  },
+  {
+    "type": "xorpd",
+    "named": false
+  },
+  {
+    "type": "xorps",
+    "named": false
+  },
+  {
+    "type": "xorw",
+    "named": false
+  }
+]
