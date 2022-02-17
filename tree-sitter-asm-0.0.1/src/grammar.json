@@ -8,6 +8,14 @@
         "name": "_line"
       }
     },
+    "_line_break": {
+      "type": "STRING",
+      "value": "\n"
+    },
+    "comment": {
+      "type": "PATTERN",
+      "value": "#.*"
+    },
     "_line": {
       "type": "SEQ",
       "members": [
@@ -56,8 +64,20 @@
           ]
         },
         {
-          "type": "STRING",
-          "value": "\n"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "comment"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_line_break"
         }
       ]
     },

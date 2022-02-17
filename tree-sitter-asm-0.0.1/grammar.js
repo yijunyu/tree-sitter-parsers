@@ -6,6 +6,8 @@ module.exports = grammar({
     rules: {
       prog: $ => repeat($._line),
 
+      _line_break: $ => '\n',
+      comment: $ => /#.*/,
       _line: $ => seq(
 	$.address,
 	':',
@@ -18,7 +20,8 @@ module.exports = grammar({
 		$.instruction_six_operands,
 		$.instruction_undetermined_operands
 	),
-	'\n'
+	optional($.comment),
+	$._line_break
       ),
 
       instruction_one_operand: $ => seq(

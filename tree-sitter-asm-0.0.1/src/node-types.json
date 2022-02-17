@@ -166,6 +166,10 @@
           "named": true
         },
         {
+          "type": "comment",
+          "named": true
+        },
+        {
           "type": "instruction_four_operands",
           "named": true
         },
@@ -195,10 +199,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "\n",
-    "named": false
   },
   {
     "type": ",",
@@ -435,6 +435,10 @@
   {
     "type": "comiss",
     "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
   },
   {
     "type": "cpuid",
