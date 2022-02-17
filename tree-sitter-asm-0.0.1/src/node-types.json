@@ -1,5 +1,10 @@
 [
   {
+    "type": "address",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "instruction_four_operands",
     "named": true,
     "fields": {},
@@ -14,10 +19,6 @@
         {
           "type": "operand",
           "named": true
-        },
-        {
-          "type": "two_bytes",
-          "named": true
         }
       ]
     }
@@ -28,7 +29,7 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "opcodes_one_operand",
@@ -36,10 +37,6 @@
         },
         {
           "type": "operand",
-          "named": true
-        },
-        {
-          "type": "two_bytes",
           "named": true
         }
       ]
@@ -60,10 +57,6 @@
         {
           "type": "operand",
           "named": true
-        },
-        {
-          "type": "two_bytes",
-          "named": true
         }
       ]
     }
@@ -82,10 +75,6 @@
         },
         {
           "type": "operand",
-          "named": true
-        },
-        {
-          "type": "two_bytes",
           "named": true
         }
       ]
@@ -106,10 +95,6 @@
         {
           "type": "operand",
           "named": true
-        },
-        {
-          "type": "two_bytes",
-          "named": true
         }
       ]
     }
@@ -128,10 +113,6 @@
         },
         {
           "type": "operand",
-          "named": true
-        },
-        {
-          "type": "two_bytes",
           "named": true
         }
       ]
@@ -181,6 +162,10 @@
       "required": false,
       "types": [
         {
+          "type": "address",
+          "named": true
+        },
+        {
           "type": "instruction_four_operands",
           "named": true
         },
@@ -202,6 +187,10 @@
         },
         {
           "type": "instruction_undetermined_operands",
+          "named": true
+        },
+        {
+          "type": "two_bytes",
           "named": true
         }
       ]

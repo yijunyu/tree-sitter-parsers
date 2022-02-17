@@ -12,6 +12,21 @@
       "type": "SEQ",
       "members": [
         {
+          "type": "SYMBOL",
+          "name": "address"
+        },
+        {
+          "type": "STRING",
+          "value": ":"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "two_bytes"
+          }
+        },
+        {
           "type": "CHOICE",
           "members": [
             {
@@ -50,43 +65,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "operand"
-          }
+          "type": "SYMBOL",
+          "name": "opcodes_one_operand"
         },
         {
-          "type": "STRING",
-          "value": ":"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "two_bytes"
-          }
-        },
-        {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "SYMBOL",
-                  "name": "opcodes_one_operand"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "operand"
-                }
-              ]
-            },
-            {
-              "type": "BLANK"
-            }
-          ]
+          "type": "SYMBOL",
+          "name": "operand"
         }
       ]
     },
@@ -294,24 +278,6 @@
     "instruction_two_operands": {
       "type": "SEQ",
       "members": [
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "operand"
-          }
-        },
-        {
-          "type": "STRING",
-          "value": ":"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "two_bytes"
-          }
-        },
         {
           "type": "SYMBOL",
           "name": "opcodes_two_operands"
@@ -947,24 +913,6 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "operand"
-          }
-        },
-        {
-          "type": "STRING",
-          "value": ":"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "two_bytes"
-          }
-        },
-        {
           "type": "SYMBOL",
           "name": "opcodes_three_operands"
         },
@@ -1323,24 +1271,6 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "operand"
-          }
-        },
-        {
-          "type": "STRING",
-          "value": ":"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "two_bytes"
-          }
-        },
-        {
           "type": "SYMBOL",
           "name": "opcodes_four_operands"
         },
@@ -1443,24 +1373,6 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "operand"
-          }
-        },
-        {
-          "type": "STRING",
-          "value": ":"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "two_bytes"
-          }
-        },
-        {
           "type": "SYMBOL",
           "name": "opcodes_six_operands"
         },
@@ -1527,24 +1439,6 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "operand"
-          }
-        },
-        {
-          "type": "STRING",
-          "value": ":"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "two_bytes"
-          }
-        },
-        {
           "type": "SYMBOL",
           "name": "opcodes_undetermined_operands"
         },
@@ -1555,11 +1449,8 @@
               "type": "SEQ",
               "members": [
                 {
-                  "type": "REPEAT",
-                  "content": {
-                    "type": "SYMBOL",
-                    "name": "operand"
-                  }
+                  "type": "SYMBOL",
+                  "name": "operand"
                 },
                 {
                   "type": "STRING",
@@ -1576,11 +1467,8 @@
           "type": "CHOICE",
           "members": [
             {
-              "type": "REPEAT",
-              "content": {
-                "type": "SYMBOL",
-                "name": "operand"
-              }
+              "type": "SYMBOL",
+              "name": "operand"
             },
             {
               "type": "BLANK"
@@ -2022,6 +1910,17 @@
         }
       ]
     },
+    "address": {
+      "type": "PREC_LEFT",
+      "value": 0,
+      "content": {
+        "type": "REPEAT1",
+        "content": {
+          "type": "PATTERN",
+          "value": "[0-9]"
+        }
+      }
+    },
     "operand": {
       "type": "PREC_LEFT",
       "value": 0,
@@ -2029,7 +1928,7 @@
         "type": "REPEAT1",
         "content": {
           "type": "PATTERN",
-          "value": "."
+          "value": "[0-9a-z%$]"
         }
       }
     },

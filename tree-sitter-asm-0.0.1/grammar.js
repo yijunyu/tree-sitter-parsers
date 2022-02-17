@@ -6,26 +6,24 @@ module.exports = grammar({
     rules: {
       prog: $ => repeat($._line),
 
-      _line: $ => seq(choice( //下面这些rules里面之间不会有重复的opcode
-        $.instruction_one_operand,
-        $.instruction_two_operands,
-        $.instruction_three_operands,
-        $.instruction_four_operands, 
-        $.instruction_six_operands,
-        $.instruction_undetermined_operands),
-        "\n"
+      _line: $ => seq(
+	$.address,
+	':',
+        repeat($.two_bytes),
+	choice( //下面这些rules里面之间不会有重复的opcode
+		$.instruction_one_operand,
+		$.instruction_two_operands,
+		$.instruction_three_operands,
+		$.instruction_four_operands, 
+		$.instruction_six_operands,
+		$.instruction_undetermined_operands
+	),
+	'\n'
       ),
 
       instruction_one_operand: $ => seq(
-        repeat($.operand),
-        ':',
-        repeat($.two_bytes),
-        optional(
-          seq(
             $.opcodes_one_operand,
             $.operand
-          )
-        )
       ),
 
       opcodes_one_operand: $ => choice(
@@ -81,9 +79,6 @@ module.exports = grammar({
       ),
 
       instruction_two_operands: $ => seq(
-        repeat($.operand),
-        ':',
-        repeat($.two_bytes),
         $.opcodes_two_operands,
         $.operand,
         ',',
@@ -246,9 +241,6 @@ module.exports = grammar({
       ),
       
       instruction_three_operands: $ => seq(
-        repeat($.operand),
-        ':',
-        repeat($.two_bytes),
         $.opcodes_three_operands,
         $.operand,
         ',',
@@ -342,9 +334,6 @@ module.exports = grammar({
       ),
 
       instruction_four_operands: $ => seq (
-        repeat($.operand),
-        ':',
-        repeat($.two_bytes),
         $.opcodes_four_operands,
         $.operand,
         ',',
@@ -374,9 +363,6 @@ module.exports = grammar({
       ),
 
       instruction_six_operands: $ => seq(
-        repeat($.operand),
-        ':',
-        repeat($.two_bytes),
         $.opcodes_six_operands,
         $.operand,
         ',',
@@ -397,18 +383,9 @@ module.exports = grammar({
       ),
 
       instruction_undetermined_operands: $ => seq(
-        repeat($.operand),
-        ':',
-        repeat($.two_bytes),
         $.opcodes_undetermined_operands,
-        optional(
-          seq(
-            repeat($.operand),
-            ','
-          ),
-        ),
-        optional(repeat
-             ($.operand))
+        optional(seq( $.operand, ',')),
+        optional($.operand)
       ),
 
       opcodes_undetermined_operands: $ => choice(
@@ -521,7 +498,9 @@ module.exports = grammar({
         'imul'
       ),
       
-      operand: $ => prec.left(repeat1(/./)), //any char
+      address: $ => prec.left(repeat1(/[0-9]/)), //any integer
+
+      operand: $ => prec.left(repeat1(/[0-9a-z%$]/)), //any identifier
 
       two_bytes: $ => /[0-9a-f][0-9a-f]/
 
