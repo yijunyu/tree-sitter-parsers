@@ -6,8 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Chunmiao Li & Yijun Yu",
+  "tree-sitter": [
+     {
+	  "scope": "source.asm",
+	  "injection-regex": "asm",
+	  "file-types": ["asm"]
+     }
+  ],
+  "license": "MIT",
   "dependencies": {
     "nan": "^2.15.0"
   },
