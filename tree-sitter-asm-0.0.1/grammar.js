@@ -7,11 +7,14 @@ module.exports = grammar({
         prog: $ => repeat($._line),
         _line_break: $ => '\n',
         comment: $ => choice(/#.*/, /===.*/),
+        _address: $ => prec.left(repeat1(/[0-9a-f]/)), //any hex number
+        _byte: $ => /[0-9a-f][0-9a-f]/,
         _line: $ => seq(
             $._address,
             ':',
-            repeat($._two_bytes),
+            repeat($._byte),
             optional(choice(
+              // data instructions
               $.adc,
               $.adcx,
               $.add,
@@ -398,7 +401,7 @@ module.exports = grammar({
               $.xorpd,
               $.xorps,
               $.xorw,
-
+	      // control instructions
               $.callq,
               $.ja,
               $.jae,
@@ -422,7 +425,8 @@ module.exports = grammar({
             optional($.comment),
             $._line_break
         ),
-	// _arguments: $ => seq(optional(repeat(seq($.operand, ','))), $.operand),
+
+        operand: $ => prec.left(repeat1(/[0-9a-zA-Z%$\(\)-{}<>_:]/)), //any identifier
 	_arguments: $ => seq(optional(repeat(seq($.operand, choice(',', ' ')))), $.operand),
         adc: $ => seq( 'adc', optional($._arguments)),
         adcx: $ => seq( 'adcx', optional($._arguments)),
@@ -811,6 +815,8 @@ module.exports = grammar({
         xorpd: $ => seq( 'xorpd', optional($._arguments)),
         xorps: $ => seq( 'xorps', optional($._arguments)),
         xorw: $ => seq('xorw', optional($._arguments)),
+
+        fn: $ => prec.left(repeat1(/[\*0-9a-zA-Z%$_\(\)<>,:+{}&\[\];\.\w]/)),
         callq: $ => seq( 'callq', $.fn),
         ja: $ => seq( 'ja', $.fn),
         jae: $ => seq( 'jae', $.fn),
@@ -831,11 +837,6 @@ module.exports = grammar({
         jrcxz: $ => seq( 'jrcxz', $.fn),
         js: $ => seq( 'js', $.fn),
         notrack: $ => seq( 'notrack', $.fn),
-
-        _address: $ => prec.left(repeat1(/[0-9a-f]/)), //any hex number
-        operand: $ => prec.left(repeat1(/[0-9a-zA-Z%$\(\)-{}<>_:]/)), //any identifier
-        fn: $ => prec.left(repeat1(/[\*0-9a-zA-Z%$_\(\)<>,:+{}&\[\];\.\w]/)),
-        _two_bytes: $ => /[0-9a-f][0-9a-f]/
 
     }
 });
