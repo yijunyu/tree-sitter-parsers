@@ -9,9 +9,10 @@ module.exports = grammar({
         comment: $ => choice(/#.*/, /===.*/),
         _address: $ => prec.left(repeat1(/[0-9a-f]/)), //any hex number
         _byte: $ => /[0-9a-f][0-9a-f]/,
+	_colon: $ => /:/,
         _line: $ => seq(
             $._address,
-            ':',
+            $._colon,
             repeat($._byte),
             optional(choice(
               // data instructions
@@ -427,7 +428,8 @@ module.exports = grammar({
         ),
 
         operand: $ => prec.left(repeat1(/[0-9a-zA-Z%$\(\)-{}<>_:]/)), //any identifier
-	_arguments: $ => seq(optional(repeat(seq($.operand, choice(',', ' ')))), $.operand),
+	// _arguments: $ => seq(optional(repeat(seq($.operand, choice(',', ' ')))), $.operand),
+	_arguments: $ => seq(optional(repeat(seq($.operand, ','))), $.operand),
         adc: $ => seq( 'adc', optional($._arguments)),
         adcx: $ => seq( 'adcx', optional($._arguments)),
         add: $ => seq( 'add', optional($._arguments)),

@@ -25,6 +25,25 @@
         }
       ]
     },
+    "_address": {
+      "type": "PREC_LEFT",
+      "value": 0,
+      "content": {
+        "type": "REPEAT1",
+        "content": {
+          "type": "PATTERN",
+          "value": "[0-9a-f]"
+        }
+      }
+    },
+    "_byte": {
+      "type": "PATTERN",
+      "value": "[0-9a-f][0-9a-f]"
+    },
+    "_colon": {
+      "type": "PATTERN",
+      "value": ":"
+    },
     "_line": {
       "type": "SEQ",
       "members": [
@@ -33,14 +52,14 @@
           "name": "_address"
         },
         {
-          "type": "STRING",
-          "value": ":"
+          "type": "SYMBOL",
+          "name": "_colon"
         },
         {
           "type": "REPEAT",
           "content": {
             "type": "SYMBOL",
-            "name": "_two_bytes"
+            "name": "_byte"
           }
         },
         {
@@ -1698,6 +1717,17 @@
         }
       ]
     },
+    "operand": {
+      "type": "PREC_LEFT",
+      "value": 0,
+      "content": {
+        "type": "REPEAT1",
+        "content": {
+          "type": "PATTERN",
+          "value": "[0-9a-zA-Z%$\\(\\)-{}<>_:]"
+        }
+      }
+    },
     "_arguments": {
       "type": "SEQ",
       "members": [
@@ -1714,17 +1744,8 @@
                     "name": "operand"
                   },
                   {
-                    "type": "CHOICE",
-                    "members": [
-                      {
-                        "type": "STRING",
-                        "value": ","
-                      },
-                      {
-                        "type": "STRING",
-                        "value": " "
-                      }
-                    ]
+                    "type": "STRING",
+                    "value": ","
                   }
                 ]
               }
@@ -9846,6 +9867,17 @@
         }
       ]
     },
+    "fn": {
+      "type": "PREC_LEFT",
+      "value": 0,
+      "content": {
+        "type": "REPEAT1",
+        "content": {
+          "type": "PATTERN",
+          "value": "[\\*0-9a-zA-Z%$_\\(\\)<>,:+{}&\\[\\];\\.\\w]"
+        }
+      }
+    },
     "callq": {
       "type": "SEQ",
       "members": [
@@ -10105,43 +10137,6 @@
           "name": "fn"
         }
       ]
-    },
-    "_address": {
-      "type": "PREC_LEFT",
-      "value": 0,
-      "content": {
-        "type": "REPEAT1",
-        "content": {
-          "type": "PATTERN",
-          "value": "[0-9a-f]"
-        }
-      }
-    },
-    "operand": {
-      "type": "PREC_LEFT",
-      "value": 0,
-      "content": {
-        "type": "REPEAT1",
-        "content": {
-          "type": "PATTERN",
-          "value": "[0-9a-zA-Z%$\\(\\)-{}<>_:]"
-        }
-      }
-    },
-    "fn": {
-      "type": "PREC_LEFT",
-      "value": 0,
-      "content": {
-        "type": "REPEAT1",
-        "content": {
-          "type": "PATTERN",
-          "value": "[\\*0-9a-zA-Z%$_\\(\\)<>,:+{}&\\[\\];\\.\\w]"
-        }
-      }
-    },
-    "_two_bytes": {
-      "type": "PATTERN",
-      "value": "[0-9a-f][0-9a-f]"
     }
   },
   "extras": [
