@@ -428,8 +428,10 @@ module.exports = grammar({
         ),
 
         operand: $ => prec.left(repeat1(/[0-9a-zA-Z%$\(\)-{}<>_:]/)), //any identifier
-	// _arguments: $ => seq(optional(repeat(seq($.operand, choice(',', ' ')))), $.operand),
-	_arguments: $ => seq(optional(repeat(seq($.operand, ','))), $.operand),
+	// assume that there is no leading space before _address in each line
+	_arguments: $ => seq(optional(repeat(seq($.operand, choice(',', ' ')))), $.operand),
+	// tolerate leading spaces but may fail at some data instructions where spaces are used inside operands
+	// _arguments: $ => seq(optional(repeat(seq($.operand, ','))), $.operand),
         adc: $ => seq( 'adc', optional($._arguments)),
         adcx: $ => seq( 'adcx', optional($._arguments)),
         add: $ => seq( 'add', optional($._arguments)),
