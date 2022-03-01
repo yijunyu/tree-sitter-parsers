@@ -1,24 +1,19 @@
 {
   "name": "tree-sitter-asm",
   "version": "0.0.1",
-  "description": "Assembly parser",
+  "description": "asm grammar for tree-sitter",
   "main": "bindings/node",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Chunmiao Li & Yijun Yu",
-  "tree-sitter": [
-     {
-	  "scope": "source.asm",
-	  "injection-regex": "asm",
-	  "file-types": ["asm"]
-     }
+  "keywords": [
+    "parsing",
+    "incremental"
   ],
-  "license": "MIT",
   "dependencies": {
-    "nan": "^2.15.0"
+    "nan": "^2.12.1"
   },
   "devDependencies": {
-    "tree-sitter-cli": "^0.20.4"
+    "tree-sitter-cli": "^0.20.3"
+  },
+  "scripts": {
+    "test": "tree-sitter test"
   }
 }

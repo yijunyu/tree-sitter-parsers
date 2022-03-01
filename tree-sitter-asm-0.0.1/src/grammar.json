@@ -44,1655 +44,1644 @@
       "type": "PATTERN",
       "value": ":"
     },
+    "instruction": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "adc"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "adcx"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "add"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "addb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "addl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "addq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "addr32"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "addsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "addss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "addw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "adox"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "aesdec"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "aesdeclast"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "aesenc"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "aesenclast"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "aeskeygenassist"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "and"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "andb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "andl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "andn"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "andpd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "andps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "andq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "andw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "blendvps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bsf"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bsr"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bswap"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bt"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "btl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "btr"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bts"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cbtw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cltd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cltq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmova"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovae"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovbe"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmove"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovg"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovge"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovle"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovne"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovns"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovo"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovp"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmovs"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmp"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmpb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmpl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmpq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cmpw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "comisd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "comiss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cpuid"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cqto"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cvtsd2ss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cvtsi2sd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cvtsi2sdl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cvtsi2sdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cvtsi2ss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cvtsi2ssl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cvtss2sd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cvttsd2si"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cvttss2si"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cwtd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "cwtl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "data16"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "dec"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "div"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "divl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "divq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "divsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "divss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "endbr64"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "femms"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fildl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fldt"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fmulp"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fs"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fstpl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "gs"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "idiv"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "idivl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "imul"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "inc"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "incl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "insb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "insl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "kmovw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "knotw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "lea"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "leaveq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "lock"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "maxsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "maxss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mfence"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "minsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "minss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mov"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movabs"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movapd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movaps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movbe"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movdqa"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movdqu"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movhlps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movhps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movsb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movsbl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movsbq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movsbw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movslq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movswl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movswq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movups"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movzbl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movzbq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movzbw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "movzwl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mul"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mulb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mull"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mulq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mulsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mulss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mulw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mulx"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "neg"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "negl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "negq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "nop"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "nopl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "nopw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "not"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "notl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "notw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "or"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "orb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "orl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "orq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "orw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "outsb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "outsl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "packuswb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "paddd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "paddq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "paddw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "palignr"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pand"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pandn"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pblendw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pclmulhqhqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pclmullqhqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pclmullqlqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pcmpeqb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pcmpeqd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pcmpgtd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pextrb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pextrq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pextrw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pinsrb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pinsrd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pinsrw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pmaddubsw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pmaddwd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pmovmskb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pmuludq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pop"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "popcnt"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "por"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "prefetcht0"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "prefetcht1"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pshufb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pshufd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pshufhw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pshuflw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pslld"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pslldq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psllq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psrad"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psrld"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psrldq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psrlq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psrlw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psubb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psubd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psubq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psubusb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "psubusw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "punpckhbw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "punpckhdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "punpckhqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "punpckhwd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "punpcklbw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "punpckldq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "punpcklqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "punpcklwd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "push"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pushq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pxor"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "re"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rep"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "repnz"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "repz"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "retq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rex"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rex_B"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rex_RB"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rex_RXB"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rex_W"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rex_WB"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rex_WRB"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rex_WRXB"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rex_XB"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rol"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "roll"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ror"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rorl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "rorx"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sar"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sarl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sarx"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sbb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "seta"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setae"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setbe"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sete"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setg"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setge"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setle"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setne"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setnp"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setns"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "seto"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setp"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sha1msg1"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sha1msg2"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sha1nexte"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sha1rnds4"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shld"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shll"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shlq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shlx"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shr"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shrd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shrl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shrq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shrx"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shufpd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "shufps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sub"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "subb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "subl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "subpd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "subq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "subsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "subss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "subw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "test"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "testb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "testl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "tzcnt"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ucomisd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ucomiss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ud2"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "unpckhpd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vaesenc"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vaesenclast"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vblendps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vblendvps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vbroadcasti128"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vbroadcasti32x4"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vbroadcastss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vcvtusi2sd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vdivsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vextracti128"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vextracti32x4"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vinsertf128"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vinserti128"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vinserti32x4"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vinserti64x4"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovapd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovaps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovdqa"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovdqa32"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovdqa64"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovdqu"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovdqu32"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovdqu64"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmovups"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vmulsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpackusdw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpaddb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpaddd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpaddq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpaddw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpalignr"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpand"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpblendd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpblendmd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpbroadcastd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpbroadcastq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpclmulhqhqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpclmulhqlqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpclmullqhqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpclmullqlqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpcmpgtd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpcmpltud"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vperm2f128"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vperm2i128"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpermd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpermi2d"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpermq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpermt2d"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpextrw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpinsrb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpinsrd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpinsrq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpinsrw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpmaddubsw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpmaddwd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpmullw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpmuludq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpor"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vprord"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vprorq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpshufb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpshufd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpslld"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpslldq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsllq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsllw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsrld"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsrldq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsrlq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsrlw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsubd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsubq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsubusw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpsubw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpunpckhdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpunpckhqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpunpckhwd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpunpckldq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpunpcklqdq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpunpcklwd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpxor"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vpxord"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vshufi32x4"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vshufi64x2"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vshufps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vsubsd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vucomisd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vucomiss"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vunpckhpd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vunpckhps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vunpcklpd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vunpcklps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vxorps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vzeroall"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "vzeroupper"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "xchg"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "xgetbv"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "xor"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "xorl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "xorpd"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "xorps"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "xorw"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "callq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ja"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jae"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jb"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jbe"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "je"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jg"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jge"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jle"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jmp"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jmpq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jne"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jno"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jns"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jo"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jp"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "jrcxz"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "js"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "notrack"
+        }
+      ]
+    },
     "_line": {
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "_address"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "_colon"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "_byte"
-          }
-        },
-        {
           "type": "CHOICE",
           "members": [
             {
-              "type": "CHOICE",
-              "members": [
-                {
-                  "type": "SYMBOL",
-                  "name": "adc"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "adcx"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "add"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "addb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "addl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "addq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "addr32"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "addsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "addss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "addw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "adox"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "aesdec"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "aesdeclast"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "aesenc"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "aesenclast"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "aeskeygenassist"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "and"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "andb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "andl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "andn"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "andpd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "andps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "andq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "andw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "blendvps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "bsf"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "bsr"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "bswap"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "bt"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "btl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "btr"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "bts"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cbtw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cltd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cltq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmova"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovae"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovbe"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmove"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovg"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovge"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovle"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovne"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovns"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovo"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovp"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmovs"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmp"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmpb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmpl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmpq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cmpw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "comisd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "comiss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cpuid"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cqto"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cvtsd2ss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cvtsi2sd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cvtsi2sdl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cvtsi2sdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cvtsi2ss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cvtsi2ssl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cvtss2sd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cvttsd2si"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cvttss2si"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cwtd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "cwtl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "data16"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "dec"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "div"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "divl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "divq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "divsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "divss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "endbr64"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "femms"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "fildl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "fldt"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "fmulp"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "fs"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "fstpl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "gs"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "idiv"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "idivl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "imul"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "inc"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "incl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "insb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "insl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "kmovw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "knotw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "lea"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "leaveq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "lock"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "maxsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "maxss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mfence"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "minsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "minss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mov"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movabs"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movapd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movaps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movbe"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movdqa"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movdqu"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movhlps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movhps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movsb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movsbl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movsbq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movsbw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movslq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movswl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movswq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movups"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movzbl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movzbq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movzbw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "movzwl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mul"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mulb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mull"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mulq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mulsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mulss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mulw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "mulx"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "neg"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "negl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "negq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "nop"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "nopl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "nopw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "not"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "notl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "notw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "or"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "orb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "orl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "orq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "orw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "outsb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "outsl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "packuswb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "paddd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "paddq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "paddw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "palignr"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pand"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pandn"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pblendw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pclmulhqhqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pclmullqhqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pclmullqlqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pcmpeqb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pcmpeqd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pcmpgtd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pextrb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pextrq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pextrw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pinsrb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pinsrd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pinsrw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pmaddubsw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pmaddwd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pmovmskb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pmuludq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pop"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "popcnt"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "por"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "prefetcht0"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "prefetcht1"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pshufb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pshufd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pshufhw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pshuflw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pslld"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pslldq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psllq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psrad"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psrld"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psrldq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psrlq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psrlw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psubb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psubd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psubq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psubusb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "psubusw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "punpckhbw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "punpckhdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "punpckhqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "punpckhwd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "punpcklbw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "punpckldq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "punpcklqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "punpcklwd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "push"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pushq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "pxor"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "re"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rep"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "repnz"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "repz"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "retq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rex"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rex_B"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rex_RB"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rex_RXB"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rex_W"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rex_WB"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rex_WRB"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rex_WRXB"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rex_XB"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rol"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "roll"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "ror"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rorl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "rorx"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sar"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sarl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sarx"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sbb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "seta"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setae"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setbe"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sete"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setg"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setge"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setle"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setne"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setnp"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setns"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "seto"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "setp"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sha1msg1"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sha1msg2"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sha1nexte"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sha1rnds4"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shld"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shll"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shlq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shlx"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shr"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shrd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shrl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shrq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shrx"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shufpd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "shufps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "ss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "sub"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "subb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "subl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "subpd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "subq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "subsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "subss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "subw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "test"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "testb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "testl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "tzcnt"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "ucomisd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "ucomiss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "ud2"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "unpckhpd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vaesenc"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vaesenclast"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vblendps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vblendvps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vbroadcasti128"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vbroadcasti32x4"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vbroadcastss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vcvtusi2sd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vdivsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vextracti128"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vextracti32x4"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vinsertf128"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vinserti128"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vinserti32x4"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vinserti64x4"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovapd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovaps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovdqa"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovdqa32"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovdqa64"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovdqu"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovdqu32"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovdqu64"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmovups"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vmulsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpackusdw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpaddb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpaddd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpaddq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpaddw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpalignr"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpand"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpblendd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpblendmd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpbroadcastd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpbroadcastq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpclmulhqhqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpclmulhqlqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpclmullqhqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpclmullqlqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpcmpgtd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpcmpltud"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vperm2f128"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vperm2i128"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpermd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpermi2d"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpermq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpermt2d"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpextrw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpinsrb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpinsrd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpinsrq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpinsrw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpmaddubsw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpmaddwd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpmullw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpmuludq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpor"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vprord"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vprorq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpshufb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpshufd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpslld"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpslldq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsllq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsllw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsrld"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsrldq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsrlq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsrlw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsubd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsubq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsubusw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpsubw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpunpckhdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpunpckhqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpunpckhwd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpunpckldq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpunpcklqdq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpunpcklwd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpxor"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vpxord"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vshufi32x4"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vshufi64x2"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vshufps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vsubsd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vucomisd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vucomiss"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vunpckhpd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vunpckhps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vunpcklpd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vunpcklps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vxorps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vzeroall"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "vzeroupper"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "xchg"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "xgetbv"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "xor"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "xorl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "xorpd"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "xorps"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "xorw"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "callq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "ja"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jae"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jb"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jbe"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "je"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jg"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jge"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jl"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jle"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jmp"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jmpq"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jne"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jno"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jns"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jo"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jp"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "jrcxz"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "js"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "notrack"
-                }
-              ]
+              "type": "SYMBOL",
+              "name": "instruction"
             },
             {
               "type": "BLANK"
@@ -1744,8 +1733,17 @@
                     "name": "operand"
                   },
                   {
-                    "type": "STRING",
-                    "value": ","
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "STRING",
+                        "value": ","
+                      },
+                      {
+                        "type": "STRING",
+                        "value": " "
+                      }
+                    ]
                   }
                 ]
               }
