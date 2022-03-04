@@ -1,486 +1,71 @@
 [
   {
-    "type": "adc",
+    "type": "AccessRegisterOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "adcx",
+    "type": "BinaryArithmeticOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "add",
+    "type": "BitAndByteOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "addb",
+    "type": "CuriousOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "addl",
+    "type": "DataTransferOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "addq",
+    "type": "IOOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "addr32",
+    "type": "LogicalOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "addsd",
+    "type": "MiscellaneousOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "addss",
+    "type": "PackUnpackOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "addw",
+    "type": "ShiftAndRotateOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "adox",
+    "type": "StackOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "aesdec",
+    "type": "StringOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "aesdeclast",
+    "type": "ToBeClassifiedOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "aesenc",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "aesenclast",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "aeskeygenassist",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "and",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "andb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "andl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "andn",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "andpd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "andps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "andq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "andw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "blendvps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "bsf",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "bsr",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "bswap",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "bt",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "btl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "btr",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "bts",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "callq",
+    "type": "base",
     "named": true,
     "fields": {},
     "children": {
@@ -488,371 +73,16 @@
       "required": true,
       "types": [
         {
-          "type": "fn",
+          "type": "registerOperand",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "cbtw",
+    "type": "callqOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cltd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cltq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmova",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovae",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovbe",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmove",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovg",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovge",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovle",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovne",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovns",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovo",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovp",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmovs",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmp",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmpb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmpl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmpq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cmpw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "comisd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "comiss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "comment",
@@ -860,530 +90,111 @@
     "fields": {}
   },
   {
-    "type": "cpuid",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cqto",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cvtsd2ss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cvtsi2sd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cvtsi2sdl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cvtsi2sdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cvtsi2ss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cvtsi2ssl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cvtss2sd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cvttsd2si",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cvttss2si",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cwtd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cwtl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "data16",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "dec",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "div",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "divl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "divq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "divsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "divss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "endbr64",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "femms",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "fildl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "fldt",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "fmulp",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "fn",
+    "type": "controlRegisterOperand",
     "named": true,
     "fields": {}
   },
   {
-    "type": "fs",
+    "type": "floatRegisterOperand",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "fnOperand",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "types": [
         {
-          "type": "operand",
+          "type": "indirectOperands",
+          "named": true
+        },
+        {
+          "type": "otherFnOperands",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "fstpl",
+    "type": "generalRegister16Bits",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "generalRegister32Bits",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "generalRegister64Bits",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "generalRegister8Bits",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "generalRegisterOperand",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
-      "required": false,
+      "multiple": false,
+      "required": true,
       "types": [
         {
-          "type": "operand",
+          "type": "generalRegister16Bits",
+          "named": true
+        },
+        {
+          "type": "generalRegister32Bits",
+          "named": true
+        },
+        {
+          "type": "generalRegister64Bits",
+          "named": true
+        },
+        {
+          "type": "generalRegister8Bits",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "gs",
+    "type": "immediateOperand",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "index",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
-      "required": false,
+      "multiple": false,
+      "required": true,
       "types": [
         {
-          "type": "operand",
+          "type": "registerOperand",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "idiv",
+    "type": "indirectOperands",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
-      "required": false,
+      "multiple": false,
+      "required": true,
       "types": [
         {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "idivl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "imul",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "inc",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "incl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "insb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "insl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
+          "type": "registerOperand",
           "named": true
         }
       ]
@@ -1394,1638 +205,51 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
-          "type": "adc",
+          "type": "opcode",
           "named": true
         },
         {
-          "type": "adcx",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "addb",
-          "named": true
-        },
-        {
-          "type": "addl",
-          "named": true
-        },
-        {
-          "type": "addq",
-          "named": true
-        },
-        {
-          "type": "addr32",
-          "named": true
-        },
-        {
-          "type": "addsd",
-          "named": true
-        },
-        {
-          "type": "addss",
-          "named": true
-        },
-        {
-          "type": "addw",
-          "named": true
-        },
-        {
-          "type": "adox",
-          "named": true
-        },
-        {
-          "type": "aesdec",
-          "named": true
-        },
-        {
-          "type": "aesdeclast",
-          "named": true
-        },
-        {
-          "type": "aesenc",
-          "named": true
-        },
-        {
-          "type": "aesenclast",
-          "named": true
-        },
-        {
-          "type": "aeskeygenassist",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "andb",
-          "named": true
-        },
-        {
-          "type": "andl",
-          "named": true
-        },
-        {
-          "type": "andn",
-          "named": true
-        },
-        {
-          "type": "andpd",
-          "named": true
-        },
-        {
-          "type": "andps",
-          "named": true
-        },
-        {
-          "type": "andq",
-          "named": true
-        },
-        {
-          "type": "andw",
-          "named": true
-        },
-        {
-          "type": "blendvps",
-          "named": true
-        },
-        {
-          "type": "bsf",
-          "named": true
-        },
-        {
-          "type": "bsr",
-          "named": true
-        },
-        {
-          "type": "bswap",
-          "named": true
-        },
-        {
-          "type": "bt",
-          "named": true
-        },
-        {
-          "type": "btl",
-          "named": true
-        },
-        {
-          "type": "btr",
-          "named": true
-        },
-        {
-          "type": "bts",
-          "named": true
-        },
-        {
-          "type": "callq",
-          "named": true
-        },
-        {
-          "type": "cbtw",
-          "named": true
-        },
-        {
-          "type": "cltd",
-          "named": true
-        },
-        {
-          "type": "cltq",
-          "named": true
-        },
-        {
-          "type": "cmova",
-          "named": true
-        },
-        {
-          "type": "cmovae",
-          "named": true
-        },
-        {
-          "type": "cmovb",
-          "named": true
-        },
-        {
-          "type": "cmovbe",
-          "named": true
-        },
-        {
-          "type": "cmove",
-          "named": true
-        },
-        {
-          "type": "cmovg",
-          "named": true
-        },
-        {
-          "type": "cmovge",
-          "named": true
-        },
-        {
-          "type": "cmovl",
-          "named": true
-        },
-        {
-          "type": "cmovle",
-          "named": true
-        },
-        {
-          "type": "cmovne",
-          "named": true
-        },
-        {
-          "type": "cmovns",
-          "named": true
-        },
-        {
-          "type": "cmovo",
-          "named": true
-        },
-        {
-          "type": "cmovp",
-          "named": true
-        },
-        {
-          "type": "cmovs",
-          "named": true
-        },
-        {
-          "type": "cmp",
-          "named": true
-        },
-        {
-          "type": "cmpb",
-          "named": true
-        },
-        {
-          "type": "cmpl",
-          "named": true
-        },
-        {
-          "type": "cmpq",
-          "named": true
-        },
-        {
-          "type": "cmpw",
-          "named": true
-        },
-        {
-          "type": "comisd",
-          "named": true
-        },
-        {
-          "type": "comiss",
-          "named": true
-        },
-        {
-          "type": "cpuid",
-          "named": true
-        },
-        {
-          "type": "cqto",
-          "named": true
-        },
-        {
-          "type": "cvtsd2ss",
-          "named": true
-        },
-        {
-          "type": "cvtsi2sd",
-          "named": true
-        },
-        {
-          "type": "cvtsi2sdl",
-          "named": true
-        },
-        {
-          "type": "cvtsi2sdq",
-          "named": true
-        },
-        {
-          "type": "cvtsi2ss",
-          "named": true
-        },
-        {
-          "type": "cvtsi2ssl",
-          "named": true
-        },
-        {
-          "type": "cvtss2sd",
-          "named": true
-        },
-        {
-          "type": "cvttsd2si",
-          "named": true
-        },
-        {
-          "type": "cvttss2si",
-          "named": true
-        },
-        {
-          "type": "cwtd",
-          "named": true
-        },
-        {
-          "type": "cwtl",
-          "named": true
-        },
-        {
-          "type": "data16",
-          "named": true
-        },
-        {
-          "type": "dec",
-          "named": true
-        },
-        {
-          "type": "div",
-          "named": true
-        },
-        {
-          "type": "divl",
-          "named": true
-        },
-        {
-          "type": "divq",
-          "named": true
-        },
-        {
-          "type": "divsd",
-          "named": true
-        },
-        {
-          "type": "divss",
-          "named": true
-        },
-        {
-          "type": "endbr64",
-          "named": true
-        },
-        {
-          "type": "femms",
-          "named": true
-        },
-        {
-          "type": "fildl",
-          "named": true
-        },
-        {
-          "type": "fldt",
-          "named": true
-        },
-        {
-          "type": "fmulp",
-          "named": true
-        },
-        {
-          "type": "fs",
-          "named": true
-        },
-        {
-          "type": "fstpl",
-          "named": true
-        },
-        {
-          "type": "gs",
-          "named": true
-        },
-        {
-          "type": "idiv",
-          "named": true
-        },
-        {
-          "type": "idivl",
-          "named": true
-        },
-        {
-          "type": "imul",
-          "named": true
-        },
-        {
-          "type": "inc",
-          "named": true
-        },
-        {
-          "type": "incl",
-          "named": true
-        },
-        {
-          "type": "insb",
-          "named": true
-        },
-        {
-          "type": "insl",
-          "named": true
-        },
-        {
-          "type": "ja",
-          "named": true
-        },
-        {
-          "type": "jae",
-          "named": true
-        },
-        {
-          "type": "jb",
-          "named": true
-        },
-        {
-          "type": "jbe",
-          "named": true
-        },
-        {
-          "type": "je",
-          "named": true
-        },
-        {
-          "type": "jg",
-          "named": true
-        },
-        {
-          "type": "jge",
-          "named": true
-        },
-        {
-          "type": "jl",
-          "named": true
-        },
-        {
-          "type": "jle",
-          "named": true
-        },
-        {
-          "type": "jmp",
-          "named": true
-        },
-        {
-          "type": "jmpq",
-          "named": true
-        },
-        {
-          "type": "jne",
-          "named": true
-        },
-        {
-          "type": "jno",
-          "named": true
-        },
-        {
-          "type": "jns",
-          "named": true
-        },
-        {
-          "type": "jo",
-          "named": true
-        },
-        {
-          "type": "jp",
-          "named": true
-        },
-        {
-          "type": "jrcxz",
-          "named": true
-        },
-        {
-          "type": "js",
-          "named": true
-        },
-        {
-          "type": "kmovw",
-          "named": true
-        },
-        {
-          "type": "knotw",
-          "named": true
-        },
-        {
-          "type": "lea",
-          "named": true
-        },
-        {
-          "type": "leaveq",
-          "named": true
-        },
-        {
-          "type": "lock",
-          "named": true
-        },
-        {
-          "type": "maxsd",
-          "named": true
-        },
-        {
-          "type": "maxss",
-          "named": true
-        },
-        {
-          "type": "mfence",
-          "named": true
-        },
-        {
-          "type": "minsd",
-          "named": true
-        },
-        {
-          "type": "minss",
-          "named": true
-        },
-        {
-          "type": "mov",
-          "named": true
-        },
-        {
-          "type": "movabs",
-          "named": true
-        },
-        {
-          "type": "movapd",
-          "named": true
-        },
-        {
-          "type": "movaps",
-          "named": true
-        },
-        {
-          "type": "movb",
-          "named": true
-        },
-        {
-          "type": "movbe",
-          "named": true
-        },
-        {
-          "type": "movd",
-          "named": true
-        },
-        {
-          "type": "movdqa",
-          "named": true
-        },
-        {
-          "type": "movdqu",
-          "named": true
-        },
-        {
-          "type": "movhlps",
-          "named": true
-        },
-        {
-          "type": "movhps",
-          "named": true
-        },
-        {
-          "type": "movl",
-          "named": true
-        },
-        {
-          "type": "movq",
-          "named": true
-        },
-        {
-          "type": "movsb",
-          "named": true
-        },
-        {
-          "type": "movsbl",
-          "named": true
-        },
-        {
-          "type": "movsbq",
-          "named": true
-        },
-        {
-          "type": "movsbw",
-          "named": true
-        },
-        {
-          "type": "movsd",
-          "named": true
-        },
-        {
-          "type": "movslq",
-          "named": true
-        },
-        {
-          "type": "movss",
-          "named": true
-        },
-        {
-          "type": "movswl",
-          "named": true
-        },
-        {
-          "type": "movswq",
-          "named": true
-        },
-        {
-          "type": "movups",
-          "named": true
-        },
-        {
-          "type": "movw",
-          "named": true
-        },
-        {
-          "type": "movzbl",
-          "named": true
-        },
-        {
-          "type": "movzbq",
-          "named": true
-        },
-        {
-          "type": "movzbw",
-          "named": true
-        },
-        {
-          "type": "movzwl",
-          "named": true
-        },
-        {
-          "type": "mul",
-          "named": true
-        },
-        {
-          "type": "mulb",
-          "named": true
-        },
-        {
-          "type": "mull",
-          "named": true
-        },
-        {
-          "type": "mulq",
-          "named": true
-        },
-        {
-          "type": "mulsd",
-          "named": true
-        },
-        {
-          "type": "mulss",
-          "named": true
-        },
-        {
-          "type": "mulw",
-          "named": true
-        },
-        {
-          "type": "mulx",
-          "named": true
-        },
-        {
-          "type": "neg",
-          "named": true
-        },
-        {
-          "type": "negl",
-          "named": true
-        },
-        {
-          "type": "negq",
-          "named": true
-        },
-        {
-          "type": "nop",
-          "named": true
-        },
-        {
-          "type": "nopl",
-          "named": true
-        },
-        {
-          "type": "nopw",
-          "named": true
-        },
-        {
-          "type": "not",
-          "named": true
-        },
-        {
-          "type": "notl",
-          "named": true
-        },
-        {
-          "type": "notrack",
-          "named": true
-        },
-        {
-          "type": "notw",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "orb",
-          "named": true
-        },
-        {
-          "type": "orl",
-          "named": true
-        },
-        {
-          "type": "orq",
-          "named": true
-        },
-        {
-          "type": "orw",
-          "named": true
-        },
-        {
-          "type": "outsb",
-          "named": true
-        },
-        {
-          "type": "outsl",
-          "named": true
-        },
-        {
-          "type": "packuswb",
-          "named": true
-        },
-        {
-          "type": "paddd",
-          "named": true
-        },
-        {
-          "type": "paddq",
-          "named": true
-        },
-        {
-          "type": "paddw",
-          "named": true
-        },
-        {
-          "type": "palignr",
-          "named": true
-        },
-        {
-          "type": "pand",
-          "named": true
-        },
-        {
-          "type": "pandn",
-          "named": true
-        },
-        {
-          "type": "pblendw",
-          "named": true
-        },
-        {
-          "type": "pclmulhqhqdq",
-          "named": true
-        },
-        {
-          "type": "pclmullqhqdq",
-          "named": true
-        },
-        {
-          "type": "pclmullqlqdq",
-          "named": true
-        },
-        {
-          "type": "pcmpeqb",
-          "named": true
-        },
-        {
-          "type": "pcmpeqd",
-          "named": true
-        },
-        {
-          "type": "pcmpgtd",
-          "named": true
-        },
-        {
-          "type": "pextrb",
-          "named": true
-        },
-        {
-          "type": "pextrq",
-          "named": true
-        },
-        {
-          "type": "pextrw",
-          "named": true
-        },
-        {
-          "type": "pinsrb",
-          "named": true
-        },
-        {
-          "type": "pinsrd",
-          "named": true
-        },
-        {
-          "type": "pinsrw",
-          "named": true
-        },
-        {
-          "type": "pmaddubsw",
-          "named": true
-        },
-        {
-          "type": "pmaddwd",
-          "named": true
-        },
-        {
-          "type": "pmovmskb",
-          "named": true
-        },
-        {
-          "type": "pmuludq",
-          "named": true
-        },
-        {
-          "type": "pop",
-          "named": true
-        },
-        {
-          "type": "popcnt",
-          "named": true
-        },
-        {
-          "type": "por",
-          "named": true
-        },
-        {
-          "type": "prefetcht0",
-          "named": true
-        },
-        {
-          "type": "prefetcht1",
-          "named": true
-        },
-        {
-          "type": "pshufb",
-          "named": true
-        },
-        {
-          "type": "pshufd",
-          "named": true
-        },
-        {
-          "type": "pshufhw",
-          "named": true
-        },
-        {
-          "type": "pshuflw",
-          "named": true
-        },
-        {
-          "type": "pslld",
-          "named": true
-        },
-        {
-          "type": "pslldq",
-          "named": true
-        },
-        {
-          "type": "psllq",
-          "named": true
-        },
-        {
-          "type": "psrad",
-          "named": true
-        },
-        {
-          "type": "psrld",
-          "named": true
-        },
-        {
-          "type": "psrldq",
-          "named": true
-        },
-        {
-          "type": "psrlq",
-          "named": true
-        },
-        {
-          "type": "psrlw",
-          "named": true
-        },
-        {
-          "type": "psubb",
-          "named": true
-        },
-        {
-          "type": "psubd",
-          "named": true
-        },
-        {
-          "type": "psubq",
-          "named": true
-        },
-        {
-          "type": "psubusb",
-          "named": true
-        },
-        {
-          "type": "psubusw",
-          "named": true
-        },
-        {
-          "type": "punpckhbw",
-          "named": true
-        },
-        {
-          "type": "punpckhdq",
-          "named": true
-        },
-        {
-          "type": "punpckhqdq",
-          "named": true
-        },
-        {
-          "type": "punpckhwd",
-          "named": true
-        },
-        {
-          "type": "punpcklbw",
-          "named": true
-        },
-        {
-          "type": "punpckldq",
-          "named": true
-        },
-        {
-          "type": "punpcklqdq",
-          "named": true
-        },
-        {
-          "type": "punpcklwd",
-          "named": true
-        },
-        {
-          "type": "push",
-          "named": true
-        },
-        {
-          "type": "pushq",
-          "named": true
-        },
-        {
-          "type": "pxor",
-          "named": true
-        },
-        {
-          "type": "re",
-          "named": true
-        },
-        {
-          "type": "rep",
-          "named": true
-        },
-        {
-          "type": "repnz",
-          "named": true
-        },
-        {
-          "type": "repz",
-          "named": true
-        },
-        {
-          "type": "retq",
-          "named": true
-        },
-        {
-          "type": "rex",
-          "named": true
-        },
-        {
-          "type": "rex_B",
-          "named": true
-        },
-        {
-          "type": "rex_RB",
-          "named": true
-        },
-        {
-          "type": "rex_RXB",
-          "named": true
-        },
-        {
-          "type": "rex_W",
-          "named": true
-        },
-        {
-          "type": "rex_WB",
-          "named": true
-        },
-        {
-          "type": "rex_WRB",
-          "named": true
-        },
-        {
-          "type": "rex_WRXB",
-          "named": true
-        },
-        {
-          "type": "rex_XB",
-          "named": true
-        },
-        {
-          "type": "rol",
-          "named": true
-        },
-        {
-          "type": "roll",
-          "named": true
-        },
-        {
-          "type": "ror",
-          "named": true
-        },
-        {
-          "type": "rorl",
-          "named": true
-        },
-        {
-          "type": "rorx",
-          "named": true
-        },
-        {
-          "type": "sar",
-          "named": true
-        },
-        {
-          "type": "sarl",
-          "named": true
-        },
-        {
-          "type": "sarx",
-          "named": true
-        },
-        {
-          "type": "sbb",
-          "named": true
-        },
-        {
-          "type": "seta",
-          "named": true
-        },
-        {
-          "type": "setae",
-          "named": true
-        },
-        {
-          "type": "setb",
-          "named": true
-        },
-        {
-          "type": "setbe",
-          "named": true
-        },
-        {
-          "type": "sete",
-          "named": true
-        },
-        {
-          "type": "setg",
-          "named": true
-        },
-        {
-          "type": "setge",
-          "named": true
-        },
-        {
-          "type": "setl",
-          "named": true
-        },
-        {
-          "type": "setle",
-          "named": true
-        },
-        {
-          "type": "setne",
-          "named": true
-        },
-        {
-          "type": "setnp",
-          "named": true
-        },
-        {
-          "type": "setns",
-          "named": true
-        },
-        {
-          "type": "seto",
-          "named": true
-        },
-        {
-          "type": "setp",
-          "named": true
-        },
-        {
-          "type": "sha1msg1",
-          "named": true
-        },
-        {
-          "type": "sha1msg2",
-          "named": true
-        },
-        {
-          "type": "sha1nexte",
-          "named": true
-        },
-        {
-          "type": "sha1rnds4",
-          "named": true
-        },
-        {
-          "type": "shl",
-          "named": true
-        },
-        {
-          "type": "shld",
-          "named": true
-        },
-        {
-          "type": "shll",
-          "named": true
-        },
-        {
-          "type": "shlq",
-          "named": true
-        },
-        {
-          "type": "shlx",
-          "named": true
-        },
-        {
-          "type": "shr",
-          "named": true
-        },
-        {
-          "type": "shrd",
-          "named": true
-        },
-        {
-          "type": "shrl",
-          "named": true
-        },
-        {
-          "type": "shrq",
-          "named": true
-        },
-        {
-          "type": "shrx",
-          "named": true
-        },
-        {
-          "type": "shufpd",
-          "named": true
-        },
-        {
-          "type": "shufps",
-          "named": true
-        },
-        {
-          "type": "ss",
-          "named": true
-        },
-        {
-          "type": "sub",
-          "named": true
-        },
-        {
-          "type": "subb",
-          "named": true
-        },
-        {
-          "type": "subl",
-          "named": true
-        },
-        {
-          "type": "subpd",
-          "named": true
-        },
-        {
-          "type": "subq",
-          "named": true
-        },
-        {
-          "type": "subsd",
-          "named": true
-        },
-        {
-          "type": "subss",
-          "named": true
-        },
-        {
-          "type": "subw",
-          "named": true
-        },
-        {
-          "type": "test",
-          "named": true
-        },
-        {
-          "type": "testb",
-          "named": true
-        },
-        {
-          "type": "testl",
-          "named": true
-        },
-        {
-          "type": "tzcnt",
-          "named": true
-        },
-        {
-          "type": "ucomisd",
-          "named": true
-        },
-        {
-          "type": "ucomiss",
-          "named": true
-        },
-        {
-          "type": "ud2",
-          "named": true
-        },
-        {
-          "type": "unpckhpd",
-          "named": true
-        },
-        {
-          "type": "vaesenc",
-          "named": true
-        },
-        {
-          "type": "vaesenclast",
-          "named": true
-        },
-        {
-          "type": "vblendps",
-          "named": true
-        },
-        {
-          "type": "vblendvps",
-          "named": true
-        },
-        {
-          "type": "vbroadcasti128",
-          "named": true
-        },
-        {
-          "type": "vbroadcasti32x4",
-          "named": true
-        },
-        {
-          "type": "vbroadcastss",
-          "named": true
-        },
-        {
-          "type": "vcvtusi2sd",
-          "named": true
-        },
-        {
-          "type": "vdivsd",
-          "named": true
-        },
-        {
-          "type": "vextracti128",
-          "named": true
-        },
-        {
-          "type": "vextracti32x4",
-          "named": true
-        },
-        {
-          "type": "vinsertf128",
-          "named": true
-        },
-        {
-          "type": "vinserti128",
-          "named": true
-        },
-        {
-          "type": "vinserti32x4",
-          "named": true
-        },
-        {
-          "type": "vinserti64x4",
-          "named": true
-        },
-        {
-          "type": "vmovapd",
-          "named": true
-        },
-        {
-          "type": "vmovaps",
-          "named": true
-        },
-        {
-          "type": "vmovd",
-          "named": true
-        },
-        {
-          "type": "vmovdqa",
-          "named": true
-        },
-        {
-          "type": "vmovdqa32",
-          "named": true
-        },
-        {
-          "type": "vmovdqa64",
-          "named": true
-        },
-        {
-          "type": "vmovdqu",
-          "named": true
-        },
-        {
-          "type": "vmovdqu32",
-          "named": true
-        },
-        {
-          "type": "vmovdqu64",
-          "named": true
-        },
-        {
-          "type": "vmovq",
-          "named": true
-        },
-        {
-          "type": "vmovsd",
-          "named": true
-        },
-        {
-          "type": "vmovss",
-          "named": true
-        },
-        {
-          "type": "vmovups",
-          "named": true
-        },
-        {
-          "type": "vmulsd",
-          "named": true
-        },
-        {
-          "type": "vpackusdw",
-          "named": true
-        },
-        {
-          "type": "vpaddb",
-          "named": true
-        },
-        {
-          "type": "vpaddd",
-          "named": true
-        },
-        {
-          "type": "vpaddq",
-          "named": true
-        },
-        {
-          "type": "vpaddw",
-          "named": true
-        },
-        {
-          "type": "vpalignr",
-          "named": true
-        },
-        {
-          "type": "vpand",
-          "named": true
-        },
-        {
-          "type": "vpblendd",
-          "named": true
-        },
-        {
-          "type": "vpblendmd",
-          "named": true
-        },
-        {
-          "type": "vpbroadcastd",
-          "named": true
-        },
-        {
-          "type": "vpbroadcastq",
-          "named": true
-        },
-        {
-          "type": "vpclmulhqhqdq",
-          "named": true
-        },
-        {
-          "type": "vpclmulhqlqdq",
-          "named": true
-        },
-        {
-          "type": "vpclmullqhqdq",
-          "named": true
-        },
-        {
-          "type": "vpclmullqlqdq",
-          "named": true
-        },
-        {
-          "type": "vpcmpgtd",
-          "named": true
-        },
-        {
-          "type": "vpcmpltud",
-          "named": true
-        },
-        {
-          "type": "vperm2f128",
-          "named": true
-        },
-        {
-          "type": "vperm2i128",
-          "named": true
-        },
-        {
-          "type": "vpermd",
-          "named": true
-        },
-        {
-          "type": "vpermi2d",
-          "named": true
-        },
-        {
-          "type": "vpermq",
-          "named": true
-        },
-        {
-          "type": "vpermt2d",
-          "named": true
-        },
-        {
-          "type": "vpextrw",
-          "named": true
-        },
-        {
-          "type": "vpinsrb",
-          "named": true
-        },
-        {
-          "type": "vpinsrd",
-          "named": true
-        },
-        {
-          "type": "vpinsrq",
-          "named": true
-        },
-        {
-          "type": "vpinsrw",
-          "named": true
-        },
-        {
-          "type": "vpmaddubsw",
-          "named": true
-        },
-        {
-          "type": "vpmaddwd",
-          "named": true
-        },
-        {
-          "type": "vpmullw",
-          "named": true
-        },
-        {
-          "type": "vpmuludq",
-          "named": true
-        },
-        {
-          "type": "vpor",
-          "named": true
-        },
-        {
-          "type": "vprord",
-          "named": true
-        },
-        {
-          "type": "vprorq",
-          "named": true
-        },
-        {
-          "type": "vpshufb",
-          "named": true
-        },
-        {
-          "type": "vpshufd",
-          "named": true
-        },
-        {
-          "type": "vpslld",
-          "named": true
-        },
-        {
-          "type": "vpslldq",
-          "named": true
-        },
-        {
-          "type": "vpsllq",
-          "named": true
-        },
-        {
-          "type": "vpsllw",
-          "named": true
-        },
-        {
-          "type": "vpsrld",
-          "named": true
-        },
-        {
-          "type": "vpsrldq",
-          "named": true
-        },
-        {
-          "type": "vpsrlq",
-          "named": true
-        },
-        {
-          "type": "vpsrlw",
-          "named": true
-        },
-        {
-          "type": "vpsubd",
-          "named": true
-        },
-        {
-          "type": "vpsubq",
-          "named": true
-        },
-        {
-          "type": "vpsubusw",
-          "named": true
-        },
-        {
-          "type": "vpsubw",
-          "named": true
-        },
-        {
-          "type": "vpunpckhdq",
-          "named": true
-        },
-        {
-          "type": "vpunpckhqdq",
-          "named": true
-        },
-        {
-          "type": "vpunpckhwd",
-          "named": true
-        },
-        {
-          "type": "vpunpckldq",
-          "named": true
-        },
-        {
-          "type": "vpunpcklqdq",
-          "named": true
-        },
-        {
-          "type": "vpunpcklwd",
-          "named": true
-        },
-        {
-          "type": "vpxor",
-          "named": true
-        },
-        {
-          "type": "vpxord",
-          "named": true
-        },
-        {
-          "type": "vshufi32x4",
-          "named": true
-        },
-        {
-          "type": "vshufi64x2",
-          "named": true
-        },
-        {
-          "type": "vshufps",
-          "named": true
-        },
-        {
-          "type": "vsubsd",
-          "named": true
-        },
-        {
-          "type": "vucomisd",
-          "named": true
-        },
-        {
-          "type": "vucomiss",
-          "named": true
-        },
-        {
-          "type": "vunpckhpd",
-          "named": true
-        },
-        {
-          "type": "vunpckhps",
-          "named": true
-        },
-        {
-          "type": "vunpcklpd",
-          "named": true
-        },
-        {
-          "type": "vunpcklps",
-          "named": true
-        },
-        {
-          "type": "vxorps",
-          "named": true
-        },
-        {
-          "type": "vzeroall",
-          "named": true
-        },
-        {
-          "type": "vzeroupper",
-          "named": true
-        },
-        {
-          "type": "xchg",
-          "named": true
-        },
-        {
-          "type": "xgetbv",
-          "named": true
-        },
-        {
-          "type": "xor",
-          "named": true
-        },
-        {
-          "type": "xorl",
-          "named": true
-        },
-        {
-          "type": "xorpd",
-          "named": true
-        },
-        {
-          "type": "xorps",
-          "named": true
-        },
-        {
-          "type": "xorw",
+          "type": "operand",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "ja",
+    "type": "instructionRegisterOperand",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "memoryAbsoluteOperand",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "memoryIndirectOperand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "offset",
+          "named": true
+        },
+        {
+          "type": "registerOperand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "memoryOperand",
     "named": true,
     "fields": {},
     "children": {
@@ -3033,14 +257,89 @@
       "required": true,
       "types": [
         {
-          "type": "fn",
+          "type": "memoryAbsoluteOperand",
+          "named": true
+        },
+        {
+          "type": "memoryIndirectOperand",
+          "named": true
+        },
+        {
+          "type": "memoryScalaredIndexedOperand",
+          "named": true
+        },
+        {
+          "type": "memorySegmentBaseOperand",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "jae",
+    "type": "memoryScalaredIndexedOperand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "base",
+          "named": true
+        },
+        {
+          "type": "index",
+          "named": true
+        },
+        {
+          "type": "offset",
+          "named": true
+        },
+        {
+          "type": "scale",
+          "named": true
+        },
+        {
+          "type": "segmentRegisterOperand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "memorySegmentBaseOperand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "memoryAbsoluteOperand",
+          "named": true
+        },
+        {
+          "type": "offset",
+          "named": true
+        },
+        {
+          "type": "registerOperand",
+          "named": true
+        },
+        {
+          "type": "segmentRegisterOperand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "offset",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "opcode",
     "named": true,
     "fields": {},
     "children": {
@@ -3048,1087 +347,59 @@
       "required": true,
       "types": [
         {
-          "type": "fn",
+          "type": "AccessRegisterOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "BinaryArithmeticOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jbe",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "BitAndByteOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "je",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "CuriousOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jg",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "DataTransferOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jge",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "IOOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "LogicalOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jle",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "MiscellaneousOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jmp",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "OperatingSystemSupportOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jmpq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "PackUnpackOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jne",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "ShiftAndRotateOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jno",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "StackOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jns",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
+          "type": "StringOpcode",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jo",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "fn",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jp",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "fn",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jrcxz",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "fn",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "js",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "fn",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "kmovw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "knotw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "lea",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "leaveq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "lock",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "maxsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "maxss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mfence",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "minsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "minss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mov",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movabs",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movapd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movaps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movbe",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movdqa",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movdqu",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movhlps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movhps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movsb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movsbl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movsbq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movsbw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movslq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movswl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movswq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movups",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movzbl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movzbq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movzbw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "movzwl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mul",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mulb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mull",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mulq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mulsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mulss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mulw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mulx",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "neg",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "negl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "negq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "nop",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "nopl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "nopw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "not",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "notl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "notrack",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "fn",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "notw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
+          "type": "ToBeClassifiedOpcode",
           "named": true
         }
       ]
@@ -4137,547 +408,47 @@
   {
     "type": "operand",
     "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "callqOpcode",
+          "named": true
+        },
+        {
+          "type": "immediateOperand",
+          "named": true
+        },
+        {
+          "type": "memoryOperand",
+          "named": true
+        },
+        {
+          "type": "opcode",
+          "named": true
+        },
+        {
+          "type": "registerOperand",
+          "named": true
+        },
+        {
+          "type": "someOpcode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "otherFnOperands",
+    "named": true,
     "fields": {}
   },
   {
-    "type": "or",
+    "type": "otherRegisterOperand",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "orb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "orl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "orq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "orw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "outsb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "outsl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "packuswb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "paddd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "paddq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "paddw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "palignr",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pand",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pandn",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pblendw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pclmulhqhqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pclmullqhqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pclmullqlqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pcmpeqb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pcmpeqd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pcmpgtd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pextrb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pextrq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pextrw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pinsrb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pinsrd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pinsrw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pmaddubsw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pmaddwd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pmovmskb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pmuludq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pop",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "popcnt",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "por",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "prefetcht0",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "prefetcht1",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "prog",
@@ -4699,3072 +470,430 @@
     }
   },
   {
-    "type": "pshufb",
+    "type": "registerOperand",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
-      "required": false,
+      "multiple": false,
+      "required": true,
       "types": [
         {
-          "type": "operand",
+          "type": "controlRegisterOperand",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pshufd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pshufhw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pshuflw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pslld",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pslldq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psllq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psrad",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psrld",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psrldq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psrlq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psrlw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psubb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psubd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psubq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psubusb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "psubusw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "punpckhbw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "punpckhdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "punpckhqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "punpckhwd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "punpcklbw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "punpckldq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "punpcklqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "punpcklwd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "push",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pushq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pxor",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "re",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rep",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "repnz",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "repz",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "retq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rex",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rex_B",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rex_RB",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rex_RXB",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rex_W",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rex_WB",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rex_WRB",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rex_WRXB",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rex_XB",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rol",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "roll",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "ror",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rorl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "rorx",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sar",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sarl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sarx",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sbb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "seta",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setae",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setbe",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sete",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setg",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setge",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setle",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setne",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setnp",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setns",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "seto",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "setp",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sha1msg1",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sha1msg2",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sha1nexte",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sha1rnds4",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shld",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shll",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shlq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shlx",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shr",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shrd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shrl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shrq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shrx",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shufpd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "shufps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "ss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "sub",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "subb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "subl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "subpd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "subq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "subsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "subss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "subw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "test",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "testb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "testl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "tzcnt",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "ucomisd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "ucomiss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "ud2",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "unpckhpd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vaesenc",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vaesenclast",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vblendps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vblendvps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vbroadcasti128",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vbroadcasti32x4",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vbroadcastss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vcvtusi2sd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vdivsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vextracti128",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vextracti32x4",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vinsertf128",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vinserti128",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vinserti32x4",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vinserti64x4",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovapd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovaps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovdqa",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovdqa32",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovdqa64",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovdqu",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovdqu32",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovdqu64",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmovups",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vmulsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpackusdw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpaddb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpaddd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpaddq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpaddw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpalignr",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpand",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpblendd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpblendmd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpbroadcastd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpbroadcastq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpclmulhqhqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpclmulhqlqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpclmullqhqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpclmullqlqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpcmpgtd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpcmpltud",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vperm2f128",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vperm2i128",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpermd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpermi2d",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpermq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpermt2d",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpextrw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpinsrb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpinsrd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpinsrq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpinsrw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpmaddubsw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpmaddwd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpmullw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpmuludq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpor",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vprord",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vprorq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpshufb",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpshufd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpslld",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpslldq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsllq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsllw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsrld",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsrldq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsrlq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsrlw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsubd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsubq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsubusw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpsubw",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpunpckhdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpunpckhqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpunpckhwd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpunpckldq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpunpcklqdq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpunpcklwd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpxor",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vpxord",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vshufi32x4",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vshufi64x2",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vshufps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vsubsd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vucomisd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vucomiss",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vunpckhpd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vunpckhps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vunpcklpd",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vunpcklps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vxorps",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vzeroall",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "vzeroupper",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
+        },
         {
-          "type": "operand",
+          "type": "floatRegisterOperand",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "xchg",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
+        },
         {
-          "type": "operand",
+          "type": "generalRegisterOperand",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "xgetbv",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
+        },
         {
-          "type": "operand",
+          "type": "instructionRegisterOperand",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "xor",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
+        },
         {
-          "type": "operand",
+          "type": "otherRegisterOperand",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "xorl",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
+        },
         {
-          "type": "operand",
+          "type": "segmentRegisterOperand",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "xorpd",
+    "type": "scale",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "xorps",
+    "type": "segmentRegisterOperand",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "xorw",
+    "type": "someOpcode",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "operand",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": " ",
     "named": false
   },
   {
+    "type": "$",
+    "named": false
+  },
+  {
+    "type": "%",
+    "named": false
+  },
+  {
+    "type": "%al",
+    "named": false
+  },
+  {
+    "type": "%ax",
+    "named": false
+  },
+  {
+    "type": "%bl",
+    "named": false
+  },
+  {
+    "type": "%bp",
+    "named": false
+  },
+  {
+    "type": "%bpl",
+    "named": false
+  },
+  {
+    "type": "%bx",
+    "named": false
+  },
+  {
+    "type": "%cl",
+    "named": false
+  },
+  {
+    "type": "%cr0",
+    "named": false
+  },
+  {
+    "type": "%cr2",
+    "named": false
+  },
+  {
+    "type": "%cr3",
+    "named": false
+  },
+  {
+    "type": "%cr4",
+    "named": false
+  },
+  {
+    "type": "%cs",
+    "named": false
+  },
+  {
+    "type": "%cx",
+    "named": false
+  },
+  {
+    "type": "%di",
+    "named": false
+  },
+  {
+    "type": "%dil",
+    "named": false
+  },
+  {
+    "type": "%dl",
+    "named": false
+  },
+  {
+    "type": "%ds",
+    "named": false
+  },
+  {
+    "type": "%dx",
+    "named": false
+  },
+  {
+    "type": "%eax",
+    "named": false
+  },
+  {
+    "type": "%ebp",
+    "named": false
+  },
+  {
+    "type": "%ebx",
+    "named": false
+  },
+  {
+    "type": "%ecx",
+    "named": false
+  },
+  {
+    "type": "%edi",
+    "named": false
+  },
+  {
+    "type": "%edx",
+    "named": false
+  },
+  {
+    "type": "%eip",
+    "named": false
+  },
+  {
+    "type": "%es",
+    "named": false
+  },
+  {
+    "type": "%esi",
+    "named": false
+  },
+  {
+    "type": "%esp",
+    "named": false
+  },
+  {
+    "type": "%fs",
+    "named": false
+  },
+  {
+    "type": "%gs",
+    "named": false
+  },
+  {
+    "type": "%ip",
+    "named": false
+  },
+  {
+    "type": "%r10",
+    "named": false
+  },
+  {
+    "type": "%r10b",
+    "named": false
+  },
+  {
+    "type": "%r10d",
+    "named": false
+  },
+  {
+    "type": "%r10w",
+    "named": false
+  },
+  {
+    "type": "%r11",
+    "named": false
+  },
+  {
+    "type": "%r11b",
+    "named": false
+  },
+  {
+    "type": "%r11d",
+    "named": false
+  },
+  {
+    "type": "%r11w",
+    "named": false
+  },
+  {
+    "type": "%r12",
+    "named": false
+  },
+  {
+    "type": "%r12b",
+    "named": false
+  },
+  {
+    "type": "%r12d",
+    "named": false
+  },
+  {
+    "type": "%r12w",
+    "named": false
+  },
+  {
+    "type": "%r13",
+    "named": false
+  },
+  {
+    "type": "%r13b",
+    "named": false
+  },
+  {
+    "type": "%r13d",
+    "named": false
+  },
+  {
+    "type": "%r13w",
+    "named": false
+  },
+  {
+    "type": "%r14",
+    "named": false
+  },
+  {
+    "type": "%r14b",
+    "named": false
+  },
+  {
+    "type": "%r14d",
+    "named": false
+  },
+  {
+    "type": "%r14w",
+    "named": false
+  },
+  {
+    "type": "%r15",
+    "named": false
+  },
+  {
+    "type": "%r15b",
+    "named": false
+  },
+  {
+    "type": "%r15d",
+    "named": false
+  },
+  {
+    "type": "%r15w",
+    "named": false
+  },
+  {
+    "type": "%r8",
+    "named": false
+  },
+  {
+    "type": "%r8b",
+    "named": false
+  },
+  {
+    "type": "%r8d",
+    "named": false
+  },
+  {
+    "type": "%r8w",
+    "named": false
+  },
+  {
+    "type": "%r9",
+    "named": false
+  },
+  {
+    "type": "%r9b",
+    "named": false
+  },
+  {
+    "type": "%r9d",
+    "named": false
+  },
+  {
+    "type": "%r9w",
+    "named": false
+  },
+  {
+    "type": "%rax",
+    "named": false
+  },
+  {
+    "type": "%rbp",
+    "named": false
+  },
+  {
+    "type": "%rbx",
+    "named": false
+  },
+  {
+    "type": "%rcx",
+    "named": false
+  },
+  {
+    "type": "%rdi",
+    "named": false
+  },
+  {
+    "type": "%rdx",
+    "named": false
+  },
+  {
+    "type": "%rip",
+    "named": false
+  },
+  {
+    "type": "%rsi",
+    "named": false
+  },
+  {
+    "type": "%rsp",
+    "named": false
+  },
+  {
+    "type": "%si",
+    "named": false
+  },
+  {
+    "type": "%sil",
+    "named": false
+  },
+  {
+    "type": "%sp",
+    "named": false
+  },
+  {
+    "type": "%spl",
+    "named": false
+  },
+  {
+    "type": "%ss",
+    "named": false
+  },
+  {
+    "type": "%st",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
     "type": ",",
     "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "1",
+    "named": false
+  },
+  {
+    "type": "2",
+    "named": false
+  },
+  {
+    "type": "4",
+    "named": false
+  },
+  {
+    "type": "8",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": "OperatingSystemSupportOpcode",
+    "named": true
   },
   {
     "type": "adc",
@@ -7983,7 +1112,15 @@
     "named": false
   },
   {
+    "type": "cmpsb",
+    "named": false
+  },
+  {
     "type": "cmpw",
+    "named": false
+  },
+  {
+    "type": "cmpxchg",
     "named": false
   },
   {
@@ -8076,6 +1213,10 @@
   },
   {
     "type": "endbr64",
+    "named": false
+  },
+  {
+    "type": "f",
     "named": false
   },
   {
@@ -8223,10 +1364,6 @@
     "named": false
   },
   {
-    "type": "lock",
-    "named": false
-  },
-  {
     "type": "maxsd",
     "named": false
   },
@@ -8319,7 +1456,15 @@
     "named": false
   },
   {
+    "type": "movsl",
+    "named": false
+  },
+  {
     "type": "movslq",
+    "named": false
+  },
+  {
+    "type": "movsq",
     "named": false
   },
   {
@@ -9388,6 +2533,14 @@
   },
   {
     "type": "xorw",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
     "named": false
   }
 ]
