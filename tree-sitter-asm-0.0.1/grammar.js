@@ -7,7 +7,7 @@ module.exports = grammar({
 
     rules: {
         prog: $ => repeat($._line),
-        _address: $ => prec.left(repeat1(/[0-9a-f]/)), //any hex number
+        _address: $ => prec.left(repeat1(/[0-9A-F]/)), //any hex number
         _byte: $ => /[0-9a-f][0-9a-f]/,
         comment: $ => choice(/#.*/, /===.*/),
         _line_break: $ => '\n',
@@ -20,7 +20,8 @@ module.exports = grammar({
 	),
 
         _line: $ => seq(
-            $._machine_code,
+            // $._machine_code,
+            optional($._machine_code),
             optional($.instruction),
             optional($.comment),
             $._line_break
