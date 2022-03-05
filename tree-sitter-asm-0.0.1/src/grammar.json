@@ -8,95 +8,39 @@
         "name": "_line"
       }
     },
-    "_line_break": {
-      "type": "STRING",
-      "value": "\n"
-    },
-    "comment": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "PATTERN",
-          "value": "#.*"
-        },
-        {
-          "type": "PATTERN",
-          "value": "===.*"
-        }
-      ]
-    },
-    "_address": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "STRING",
-            "value": " "
-          }
-        },
-        {
-          "type": "REPEAT1",
-          "content": {
-            "type": "PATTERN",
-            "value": "[0-9a-f]"
-          }
-        }
-      ]
-    },
-    "_byte": {
-      "type": "PATTERN",
-      "value": "[0-9a-f][0-9a-f]"
-    },
-    "_colon": {
-      "type": "PATTERN",
-      "value": ":"
-    },
-    "_comma": {
-      "type": "PATTERN",
-      "value": ","
-    },
-    "_machine_code": {
+    "_line": {
       "type": "SEQ",
       "members": [
         {
           "type": "SYMBOL",
-          "name": "_address"
+          "name": "address"
         },
         {
-          "type": "SYMBOL",
-          "name": "_colon"
+          "type": "STRING",
+          "value": ":"
         },
         {
           "type": "REPEAT",
           "content": {
             "type": "SYMBOL",
-            "name": "_byte"
+            "name": "two_bytes"
           }
-        }
-      ]
-    },
-    "_line": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "_machine_code"
-            },
-            {
-              "type": "BLANK"
-            }
-          ]
         },
         {
           "type": "CHOICE",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "instruction"
+              "type": "CHOICE",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "instruction"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "callq"
+                }
+              ]
             },
             {
               "type": "BLANK"
@@ -121,6 +65,38 @@
         }
       ]
     },
+    "address": {
+      "type": "PREC_LEFT",
+      "value": 0,
+      "content": {
+        "type": "REPEAT1",
+        "content": {
+          "type": "PATTERN",
+          "value": "[0-9a-f]"
+        }
+      }
+    },
+    "two_bytes": {
+      "type": "PATTERN",
+      "value": "[0-9a-f][0-9a-f]"
+    },
+    "comment": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "#.*"
+        },
+        {
+          "type": "PATTERN",
+          "value": "===.*"
+        }
+      ]
+    },
+    "_line_break": {
+      "type": "STRING",
+      "value": "\n"
+    },
     "instruction": {
       "type": "SEQ",
       "members": [
@@ -144,8 +120,8 @@
                     "type": "CHOICE",
                     "members": [
                       {
-                        "type": "SYMBOL",
-                        "name": "_comma"
+                        "type": "STRING",
+                        "value": ","
                       },
                       {
                         "type": "STRING",
@@ -1862,10 +1838,6 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "someOpcode"
-        },
-        {
-          "type": "SYMBOL",
           "name": "immediateOperand"
         },
         {
@@ -1875,6 +1847,18 @@
         {
           "type": "SYMBOL",
           "name": "memoryOperand"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "someOpcode"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "callqOpcode"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "opcode"
         },
         {
           "type": "SEQ",

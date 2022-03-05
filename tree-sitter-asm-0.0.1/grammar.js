@@ -1,12 +1,12 @@
 module.exports = grammar({
-    name: 'asm',
+    name: 'asm', //Applicable for our dataset
+
+    //word: $ => $.identifier, //这行的存在会产生Undefined symbol `ReferenceError`
+
+    //We don"t consider Assembly Language Labels (removed on preprocessing)
 
     rules: {
         prog: $ => repeat($._line),
-        _line_break: $ => '\n',
-        comment: $ => choice(/#.*/, /===.*/),
-        _address: $ => seq(repeat(' '), repeat1(/[0-9a-f]/), ), //any hex number
-        _byte: $ => /[0-9a-f][0-9a-f]/,
 	_colon: $ => /:/,
 	_comma: $ => /,/,
 	_machine_code: $ => seq(
@@ -14,16 +14,21 @@ module.exports = grammar({
             $._colon,
             repeat($._byte),
 	),
+
         _line: $ => seq(
-	    optional($._machine_code),
-            optional($.instruction),
+            optional($._machine_code),
+            optional(choice($.instruction, $.callq)),
             optional($.comment),
-	    $._line_break
+            $._line_break
         ),
+
+        _address: $ => prec.left(repeat1(/[0-9a-f]/)), //any hex number
+        _byte: $ => /[0-9a-f][0-9a-f]/,
+        comment: $ => choice(/#.*/, /===.*/),
+        _line_break: $ => '\n',
+
         instruction: $ => seq(
             $.opcode,
-            // optional(repeat(seq($.operand, $._comma))),
-	    // assume that there is no leading space before the line
             optional(repeat(seq($.operand, choice($._comma, ' ')))),
             optional($.operand)
         ),
@@ -240,10 +245,12 @@ module.exports = grammar({
         ),
 
         operand: $ => choice(
-	    $.someOpcode,
             $.immediateOperand,
             $.registerOperand,
             $.memoryOperand,
+            $.someOpcode,
+            // $.callqOpcode,
+            // $.opcode,
             seq('f', prec.left(repeat1(/[0-9a-zA-Z_]/))),
             seq('<', prec.left(repeat1(/[0-9a-zA-Z+_]/)), '>')
             //$.otherOperand
@@ -307,9 +314,9 @@ module.exports = grammar({
             optional($.offset),
             '(',
             optional($.base),
-            ',',
+            $._comma,
             $.index,
-            ',',
+            $._comma,
             $.scale,
             ')'
 
@@ -370,7 +377,7 @@ module.exports = grammar({
 
         callq: $ => seq(
             $.callqOpcode,
-            optional(repeat(seq($.fnOperand, choice(',', ' ')))),
+            optional(repeat(seq($.fnOperand, choice($._comma, ' ')))),
             optional($.fnOperand)
         ),
 
@@ -396,6 +403,7 @@ module.exports = grammar({
             'js',
             'notrack'
         ),
+        // fn: $ => prec.left(repeat1(/[*0-9a-zA-Z%$_\(\)<>,:+{}&\[\];\.]/)),
 
         fnOperand: $ => choice(
             'jmpq',
@@ -443,6 +451,10 @@ module.exports = grammar({
                 )
             )
         ),
+
+        // specificRegister: $ => choice(
+
+        // ),
 
         otherFnOperands: $ => prec.left(repeat1(/[0-9a-zA-Z%$_\(\)<>,:+{}&\[\];\.]/))
     }
