@@ -7,13 +7,31 @@
     "parsing",
     "incremental"
   ],
+  "author": "Chunmiao Li and Yijun Yu",
+  "license": "MIT",
   "dependencies": {
-    "nan": "^2.12.1"
+    "nan": "^2.12.1",
+    "prebuild-install": "^5.3.3"
   },
   "devDependencies": {
+    "prebuild": "^10.0.0",
     "tree-sitter-cli": "^0.20.3"
   },
   "scripts": {
-    "test": "tree-sitter test"
-  }
+    "install": "prebuild-install || node-gyp rebuild",
+    "pre-build": "prebuild --all --strip --verbose",
+    "pre-build:upload": "prebuild --upload-all",
+    "test": "tree-sitter test",
+    "test-windows": "tree-sitter test"
+  },
+  "repository": "https://github.com/yijunyu/tree-sitter-parsers",
+  "tree-sitter": [
+    {
+      "scope": "source.asm",
+      "injection-regex": "asm",
+      "file-types": [
+        "asm"
+      ]
+    }
+  ]
 }
