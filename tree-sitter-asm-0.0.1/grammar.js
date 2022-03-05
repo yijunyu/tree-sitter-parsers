@@ -24,7 +24,7 @@ module.exports = grammar({
             $.opcode,
             // optional(repeat(seq($.operand, $._comma))),
 	    // assume that there is no leading space before the line
-            optional(repeat(seq($.operand, choice(',', ' ')))),
+            optional(repeat(seq($.operand, choice($._comma, ' ')))),
             optional($.operand)
         ),
 
