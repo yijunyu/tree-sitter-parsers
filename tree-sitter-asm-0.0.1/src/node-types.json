@@ -65,11 +65,6 @@
     "fields": {}
   },
   {
-    "type": "address",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "base",
     "named": true,
     "fields": {},
@@ -438,19 +433,11 @@
       "required": false,
       "types": [
         {
-          "type": "callqOpcode",
-          "named": true
-        },
-        {
           "type": "immediateOperand",
           "named": true
         },
         {
           "type": "memoryOperand",
-          "named": true
-        },
-        {
-          "type": "opcode",
           "named": true
         },
         {
@@ -483,10 +470,6 @@
       "required": false,
       "types": [
         {
-          "type": "address",
-          "named": true
-        },
-        {
           "type": "callq",
           "named": true
         },
@@ -496,10 +479,6 @@
         },
         {
           "type": "instruction",
-          "named": true
-        },
-        {
-          "type": "two_bytes",
           "named": true
         }
       ]
@@ -889,10 +868,6 @@
   },
   {
     "type": "*",
-    "named": false
-  },
-  {
-    "type": ",",
     "named": false
   },
   {
@@ -2126,10 +2101,6 @@
   {
     "type": "testl",
     "named": false
-  },
-  {
-    "type": "two_bytes",
-    "named": true
   },
   {
     "type": "tzcnt",
