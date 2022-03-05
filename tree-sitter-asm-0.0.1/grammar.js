@@ -7,7 +7,11 @@ module.exports = grammar({
 
     rules: {
         prog: $ => repeat($._line),
-	_colon: $ => /:/,
+        _address: $ => prec.left(repeat1(/[0-9a-f]/)), //any hex number
+        _byte: $ => /[0-9a-f][0-9a-f]/,
+        comment: $ => choice(/#.*/, /===.*/),
+        _line_break: $ => '\n',
+	_colon: $ => ':',
 	_comma: $ => /,/,
 	_machine_code: $ => seq(
             $._address,
@@ -16,18 +20,19 @@ module.exports = grammar({
 	),
 
         _line: $ => seq(
-            optional($._machine_code),
-            optional(choice($.instruction, $.callq)),
+            $._machine_code,
+            optional($.instruction),
             optional($.comment),
             $._line_break
         ),
 
-        _address: $ => prec.left(repeat1(/[0-9a-f]/)), //any hex number
-        _byte: $ => /[0-9a-f][0-9a-f]/,
-        comment: $ => choice(/#.*/, /===.*/),
-        _line_break: $ => '\n',
 
-        instruction: $ => seq(
+	instruction: $ => choice(
+		$.data,
+		$.control
+	),
+
+        data: $ => seq(
             $.opcode,
             optional(repeat(seq($.operand, choice($._comma, ' ')))),
             optional($.operand)
@@ -36,7 +41,7 @@ module.exports = grammar({
         opcode: $ => choice(
             $.BinaryArithmeticOpcode,
             $.BitAndByteOpcode,
-            //$.ControlTransferOpcode,  //this is replaced by callqOpcode
+            //$.ControlTransferOpcode,  //this is replaced by controlOpcode
             $.CuriousOpcode,
             $.DataTransferOpcode,
             $.IOOpcode,
@@ -249,7 +254,7 @@ module.exports = grammar({
             $.registerOperand,
             $.memoryOperand,
             $.someOpcode,
-            // $.callqOpcode,
+            // $.controlOpcode,
             // $.opcode,
             seq('f', prec.left(repeat1(/[0-9a-zA-Z_]/))),
             seq('<', prec.left(repeat1(/[0-9a-zA-Z+_]/)), '>')
@@ -375,13 +380,13 @@ module.exports = grammar({
 
         //otherOperand: $ => prec.left(repeat1(/[0-9a-z%$\(\)-:{}<>A-Z_]/)), //any identifier
 
-        callq: $ => seq(
-            $.callqOpcode,
+        control: $ => seq(
+            $.controlOpcode,
             optional(repeat(seq($.fnOperand, choice($._comma, ' ')))),
             optional($.fnOperand)
         ),
 
-        callqOpcode: $ => choice(
+        controlOpcode: $ => choice(
             'callq',
             'ja',
             'jae',
@@ -456,6 +461,7 @@ module.exports = grammar({
 
         // ),
 
-        otherFnOperands: $ => prec.left(repeat1(/[0-9a-zA-Z%$_\(\)<>,:+{}&\[\];\.]/))
+        otherFnOperands: $ => prec.left(repeat1(/[0-9a-zA-Z%$_\(\)<>,:+{}&\[\];\.]/)),
+
     }
 });
