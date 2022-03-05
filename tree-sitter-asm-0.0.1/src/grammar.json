@@ -8,8 +8,40 @@
         "name": "_line"
       }
     },
-    "_colon": {
+    "_address": {
+      "type": "PREC_LEFT",
+      "value": 0,
+      "content": {
+        "type": "REPEAT1",
+        "content": {
+          "type": "PATTERN",
+          "value": "[0-9A-F]"
+        }
+      }
+    },
+    "_byte": {
       "type": "PATTERN",
+      "value": "[0-9a-f][0-9a-f]"
+    },
+    "comment": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "#.*"
+        },
+        {
+          "type": "PATTERN",
+          "value": "===.*"
+        }
+      ]
+    },
+    "_line_break": {
+      "type": "STRING",
+      "value": "\n"
+    },
+    "_colon": {
+      "type": "STRING",
       "value": ":"
     },
     "_comma": {
@@ -55,17 +87,8 @@
           "type": "CHOICE",
           "members": [
             {
-              "type": "CHOICE",
-              "members": [
-                {
-                  "type": "SYMBOL",
-                  "name": "instruction"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "callq"
-                }
-              ]
+              "type": "SYMBOL",
+              "name": "instruction"
             },
             {
               "type": "BLANK"
@@ -90,39 +113,20 @@
         }
       ]
     },
-    "_address": {
-      "type": "PREC_LEFT",
-      "value": 0,
-      "content": {
-        "type": "REPEAT1",
-        "content": {
-          "type": "PATTERN",
-          "value": "[0-9a-f]"
-        }
-      }
-    },
-    "_byte": {
-      "type": "PATTERN",
-      "value": "[0-9a-f][0-9a-f]"
-    },
-    "comment": {
+    "instruction": {
       "type": "CHOICE",
       "members": [
         {
-          "type": "PATTERN",
-          "value": "#.*"
+          "type": "SYMBOL",
+          "name": "data"
         },
         {
-          "type": "PATTERN",
-          "value": "===.*"
+          "type": "SYMBOL",
+          "name": "control"
         }
       ]
     },
-    "_line_break": {
-      "type": "STRING",
-      "value": "\n"
-    },
-    "instruction": {
+    "data": {
       "type": "SEQ",
       "members": [
         {
@@ -2613,12 +2617,12 @@
         }
       ]
     },
-    "callq": {
+    "control": {
       "type": "SEQ",
       "members": [
         {
           "type": "SYMBOL",
-          "name": "callqOpcode"
+          "name": "controlOpcode"
         },
         {
           "type": "CHOICE",
@@ -2667,7 +2671,7 @@
         }
       ]
     },
-    "callqOpcode": {
+    "controlOpcode": {
       "type": "CHOICE",
       "members": [
         {

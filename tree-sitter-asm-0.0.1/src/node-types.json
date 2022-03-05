@@ -80,7 +80,12 @@
     }
   },
   {
-    "type": "callq",
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "control",
     "named": true,
     "fields": {},
     "children": {
@@ -88,7 +93,7 @@
       "required": true,
       "types": [
         {
-          "type": "callqOpcode",
+          "type": "controlOpcode",
           "named": true
         },
         {
@@ -99,12 +104,7 @@
     }
   },
   {
-    "type": "callqOpcode",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "comment",
+    "type": "controlOpcode",
     "named": true,
     "fields": {}
   },
@@ -112,6 +112,25 @@
     "type": "controlRegisterOperand",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": "data",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "opcode",
+          "named": true
+        },
+        {
+          "type": "operand",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "floatRegisterOperand",
@@ -224,15 +243,15 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "opcode",
+          "type": "control",
           "named": true
         },
         {
-          "type": "operand",
+          "type": "data",
           "named": true
         }
       ]
@@ -469,10 +488,6 @@
       "multiple": true,
       "required": false,
       "types": [
-        {
-          "type": "callq",
-          "named": true
-        },
         {
           "type": "comment",
           "named": true
