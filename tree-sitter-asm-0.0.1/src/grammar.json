@@ -26,15 +26,23 @@
       ]
     },
     "_address": {
-      "type": "PREC_LEFT",
-      "value": 0,
-      "content": {
-        "type": "REPEAT1",
-        "content": {
-          "type": "PATTERN",
-          "value": "[0-9a-f]"
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "STRING",
+            "value": " "
+          }
+        },
+        {
+          "type": "REPEAT1",
+          "content": {
+            "type": "PATTERN",
+            "value": "[0-9a-f]"
+          }
         }
-      }
+      ]
     },
     "_byte": {
       "type": "PATTERN",
@@ -133,8 +141,17 @@
                     "name": "operand"
                   },
                   {
-                    "type": "SYMBOL",
-                    "name": "_comma"
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "STRING",
+                        "value": ","
+                      },
+                      {
+                        "type": "STRING",
+                        "value": " "
+                      }
+                    ]
                   }
                 ]
               }
@@ -1845,6 +1862,10 @@
       "members": [
         {
           "type": "SYMBOL",
+          "name": "someOpcode"
+        },
+        {
+          "type": "SYMBOL",
           "name": "immediateOperand"
         },
         {
@@ -1854,18 +1875,6 @@
         {
           "type": "SYMBOL",
           "name": "memoryOperand"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "someOpcode"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "callqOpcode"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "opcode"
         },
         {
           "type": "SEQ",

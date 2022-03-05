@@ -414,19 +414,11 @@
       "required": false,
       "types": [
         {
-          "type": "callqOpcode",
-          "named": true
-        },
-        {
           "type": "immediateOperand",
           "named": true
         },
         {
           "type": "memoryOperand",
-          "named": true
-        },
-        {
-          "type": "opcode",
           "named": true
         },
         {

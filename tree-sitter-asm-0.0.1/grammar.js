@@ -5,7 +5,7 @@ module.exports = grammar({
         prog: $ => repeat($._line),
         _line_break: $ => '\n',
         comment: $ => choice(/#.*/, /===.*/),
-        _address: $ => prec.left(repeat1(/[0-9a-f]/)), //any hex number
+        _address: $ => seq(repeat(' '), repeat1(/[0-9a-f]/), ), //any hex number
         _byte: $ => /[0-9a-f][0-9a-f]/,
 	_colon: $ => /:/,
 	_comma: $ => /,/,
@@ -22,8 +22,9 @@ module.exports = grammar({
         ),
         instruction: $ => seq(
             $.opcode,
-            // optional(repeat(seq($.operand, choice(',', ' ')))),
-            optional(repeat(seq($.operand, $._comma))),
+            // optional(repeat(seq($.operand, $._comma))),
+	    // assume that there is no leading space before the line
+            optional(repeat(seq($.operand, choice(',', ' ')))),
             optional($.operand)
         ),
 
@@ -239,12 +240,10 @@ module.exports = grammar({
         ),
 
         operand: $ => choice(
+	    $.someOpcode,
             $.immediateOperand,
             $.registerOperand,
             $.memoryOperand,
-            $.someOpcode,
-            $.callqOpcode,
-            $.opcode,
             seq('f', prec.left(repeat1(/[0-9a-zA-Z_]/))),
             seq('<', prec.left(repeat1(/[0-9a-zA-Z+_]/)), '>')
             //$.otherOperand
