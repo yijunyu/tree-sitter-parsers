@@ -4,7 +4,7 @@ description = "asm grammar for the tree-sitter parsing library"
 version = "0.0.1"
 keywords = ["incremental", "parsing", "asm"]
 categories = ["parsing", "text-editors"]
-repository = "https://github.com/tree-sitter/tree-sitter-asm"
+repository = "https://github.com/yijunyu/tree-sitter-parsers"
 edition = "2018"
 license = "MIT"
 
@@ -17,7 +17,7 @@ include = [
 ]
 
 [lib]
-path = "bindings/rust/lib.rs"
+path = "bindings/asm/lib.rs"
 
 [dependencies]
 tree-sitter = "~0.20"
