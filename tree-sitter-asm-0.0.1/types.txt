@@ -44,9 +44,11 @@ base
 BinaryArithmeticOpcode
 BitAndByteOpcode
 %bl
+BlendOpcode
 blendvps
 %bp
 %bpl
+BroadcastOpcode
 bsf
 bsr
 bswap
@@ -93,8 +95,8 @@ cqto
 %cr2
 %cr3
 %cr4
+CryptoOpcode
 %cs
-CuriousOpcode
 cvtsd2ss
 cvtsi2sd
 cvtsi2sdl
@@ -132,6 +134,7 @@ endbr64
 %es
 %esi
 %esp
+ExtractOpcode
 f
 femms
 fildl
@@ -158,6 +161,7 @@ incl
 index
 indirectOperands
 insb
+InsertOpcode
 insl
 instruction
 instructionRegisterOperand
@@ -185,6 +189,7 @@ kmovw
 knotw
 lea
 leaveq
+lock
 LogicalOpcode
 maxsd
 maxss
@@ -273,6 +278,7 @@ pclmullqlqdq
 pcmpeqb
 pcmpeqd
 pcmpgtd
+PermuteOpcode
 pextrb
 pextrq
 pextrw
@@ -413,6 +419,7 @@ shrd
 shrl
 shrq
 shrx
+ShuffleOpcode
 shufpd
 shufps
 %si
@@ -436,7 +443,6 @@ subw
 test
 testb
 testl
-ToBeClassifiedOpcode
 tzcnt
 ucomisd
 ucomiss
