@@ -72,16 +72,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "_machine_code"
-            },
-            {
-              "type": "BLANK"
-            }
-          ]
+          "type": "SYMBOL",
+          "name": "_machine_code"
         },
         {
           "type": "CHOICE",
@@ -193,10 +185,6 @@
         },
         {
           "type": "SYMBOL",
-          "name": "CuriousOpcode"
-        },
-        {
-          "type": "SYMBOL",
           "name": "DataTransferOpcode"
         },
         {
@@ -237,7 +225,31 @@
         },
         {
           "type": "SYMBOL",
-          "name": "ToBeClassifiedOpcode"
+          "name": "CryptoOpcode"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ExtractOpcode"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "InsertOpcode"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ShuffleOpcode"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "PermuteOpcode"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "BlendOpcode"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "BroadcastOpcode"
         }
       ]
     },
@@ -455,6 +467,174 @@
         {
           "type": "STRING",
           "value": "vpclmullqlqdq"
+        },
+        {
+          "type": "STRING",
+          "value": "adcx"
+        },
+        {
+          "type": "STRING",
+          "value": "adox"
+        },
+        {
+          "type": "STRING",
+          "value": "vmulsd"
+        },
+        {
+          "type": "STRING",
+          "value": "vpaddd"
+        },
+        {
+          "type": "STRING",
+          "value": "vpaddb"
+        },
+        {
+          "type": "STRING",
+          "value": "vpaddq"
+        },
+        {
+          "type": "STRING",
+          "value": "vpaddw"
+        },
+        {
+          "type": "STRING",
+          "value": "vpcmpgtd"
+        },
+        {
+          "type": "STRING",
+          "value": "vdivsd"
+        },
+        {
+          "type": "STRING",
+          "value": "vpmaddubsw"
+        },
+        {
+          "type": "STRING",
+          "value": "vpmaddwd"
+        },
+        {
+          "type": "STRING",
+          "value": "vpmullw"
+        },
+        {
+          "type": "STRING",
+          "value": "vpmuludq"
+        },
+        {
+          "type": "STRING",
+          "value": "vucomisd"
+        },
+        {
+          "type": "STRING",
+          "value": "vucomiss"
+        },
+        {
+          "type": "STRING",
+          "value": "addsd"
+        },
+        {
+          "type": "STRING",
+          "value": "ucomisd"
+        },
+        {
+          "type": "STRING",
+          "value": "ucomiss"
+        },
+        {
+          "type": "STRING",
+          "value": "maxsd"
+        },
+        {
+          "type": "STRING",
+          "value": "minsd"
+        },
+        {
+          "type": "STRING",
+          "value": "maxss"
+        },
+        {
+          "type": "STRING",
+          "value": "minss"
+        },
+        {
+          "type": "STRING",
+          "value": "vsubsd"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsubusw"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsubq"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsubd"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsubw"
+        },
+        {
+          "type": "STRING",
+          "value": "psubd"
+        },
+        {
+          "type": "STRING",
+          "value": "pmaddwd"
+        },
+        {
+          "type": "STRING",
+          "value": "paddw"
+        },
+        {
+          "type": "STRING",
+          "value": "psubusw"
+        },
+        {
+          "type": "STRING",
+          "value": "psubusb"
+        },
+        {
+          "type": "STRING",
+          "value": "psubb"
+        },
+        {
+          "type": "STRING",
+          "value": "psubq"
+        },
+        {
+          "type": "STRING",
+          "value": "paddq"
+        },
+        {
+          "type": "STRING",
+          "value": "pmuludq"
+        },
+        {
+          "type": "STRING",
+          "value": "pmaddubsw"
+        },
+        {
+          "type": "STRING",
+          "value": "paddd"
+        },
+        {
+          "type": "STRING",
+          "value": "pcmpgtd"
+        },
+        {
+          "type": "STRING",
+          "value": "pcmpeqd"
+        },
+        {
+          "type": "STRING",
+          "value": "pcmpeqb"
+        },
+        {
+          "type": "STRING",
+          "value": "vpcmpltud"
         }
       ]
     },
@@ -556,35 +736,6 @@
         {
           "type": "STRING",
           "value": "knotw"
-        }
-      ]
-    },
-    "CuriousOpcode": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "vpcmpltud"
-        },
-        {
-          "type": "STRING",
-          "value": "gs"
-        },
-        {
-          "type": "STRING",
-          "value": "re"
-        },
-        {
-          "type": "STRING",
-          "value": "ss"
-        },
-        {
-          "type": "STRING",
-          "value": "leaveq"
-        },
-        {
-          "type": "STRING",
-          "value": "retq"
         }
       ]
     },
@@ -725,6 +876,10 @@
         },
         {
           "type": "STRING",
+          "value": "vcvtusi2sd"
+        },
+        {
+          "type": "STRING",
           "value": "mov"
         },
         {
@@ -842,6 +997,62 @@
         {
           "type": "STRING",
           "value": "fstpl"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovaps"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovapd"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovss"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovdqu"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovdqu64"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovdqu32"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovdqa"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovdqa32"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovdqa64"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovq"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovups"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovd"
+        },
+        {
+          "type": "STRING",
+          "value": "vmovsd"
+        },
+        {
+          "type": "STRING",
+          "value": "pmovmskb"
         }
       ]
     },
@@ -976,6 +1187,18 @@
         {
           "type": "STRING",
           "value": "notw"
+        },
+        {
+          "type": "STRING",
+          "value": "vpor"
+        },
+        {
+          "type": "STRING",
+          "value": "por"
+        },
+        {
+          "type": "STRING",
+          "value": "pxor"
         }
       ]
     },
@@ -1037,12 +1260,57 @@
         {
           "type": "STRING",
           "value": "endbr64"
+        },
+        {
+          "type": "STRING",
+          "value": "gs"
+        },
+        {
+          "type": "STRING",
+          "value": "re"
+        },
+        {
+          "type": "STRING",
+          "value": "ss"
         }
       ]
     },
     "OperatingSystemSupportOpcode": {
-      "type": "STRING",
-      "value": "lock"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "lock"
+        },
+        {
+          "type": "STRING",
+          "value": "prefetcht1"
+        },
+        {
+          "type": "STRING",
+          "value": "prefetcht0"
+        },
+        {
+          "type": "STRING",
+          "value": "mfence"
+        },
+        {
+          "type": "STRING",
+          "value": "femms"
+        },
+        {
+          "type": "STRING",
+          "value": "tzcnt"
+        },
+        {
+          "type": "STRING",
+          "value": "leaveq"
+        },
+        {
+          "type": "STRING",
+          "value": "retq"
+        }
+      ]
     },
     "PackUnpackOpcode": {
       "type": "CHOICE",
@@ -1106,6 +1374,38 @@
         {
           "type": "STRING",
           "value": "vpunpckhwd"
+        },
+        {
+          "type": "STRING",
+          "value": "vpackusdw"
+        },
+        {
+          "type": "STRING",
+          "value": "vpalignr"
+        },
+        {
+          "type": "STRING",
+          "value": "palignr"
+        },
+        {
+          "type": "STRING",
+          "value": "vunpckhpd"
+        },
+        {
+          "type": "STRING",
+          "value": "vunpckhps"
+        },
+        {
+          "type": "STRING",
+          "value": "vunpcklpd"
+        },
+        {
+          "type": "STRING",
+          "value": "vunpcklps"
+        },
+        {
+          "type": "STRING",
+          "value": "unpckhpd"
         }
       ]
     },
@@ -1187,6 +1487,74 @@
         {
           "type": "STRING",
           "value": "roll"
+        },
+        {
+          "type": "STRING",
+          "value": "vpslldq"
+        },
+        {
+          "type": "STRING",
+          "value": "vpslld"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsllq"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsllw"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsrldq"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsrld"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsrlq"
+        },
+        {
+          "type": "STRING",
+          "value": "vpsrlw"
+        },
+        {
+          "type": "STRING",
+          "value": "rorx"
+        },
+        {
+          "type": "STRING",
+          "value": "psrld"
+        },
+        {
+          "type": "STRING",
+          "value": "psrlw"
+        },
+        {
+          "type": "STRING",
+          "value": "psllq"
+        },
+        {
+          "type": "STRING",
+          "value": "psrlq"
+        },
+        {
+          "type": "STRING",
+          "value": "pslldq"
+        },
+        {
+          "type": "STRING",
+          "value": "psrldq"
+        },
+        {
+          "type": "STRING",
+          "value": "psrad"
+        },
+        {
+          "type": "STRING",
+          "value": "pslld"
         }
       ]
     },
@@ -1282,20 +1650,20 @@
         {
           "type": "STRING",
           "value": "kmovw"
+        },
+        {
+          "type": "STRING",
+          "value": "vzeroall"
+        },
+        {
+          "type": "STRING",
+          "value": "vzeroupper"
         }
       ]
     },
-    "ToBeClassifiedOpcode": {
+    "CryptoOpcode": {
       "type": "CHOICE",
       "members": [
-        {
-          "type": "STRING",
-          "value": "adcx"
-        },
-        {
-          "type": "STRING",
-          "value": "adox"
-        },
         {
           "type": "STRING",
           "value": "aesdec"
@@ -1323,111 +1691,41 @@
         {
           "type": "STRING",
           "value": "aeskeygenassist"
-        },
-        {
-          "type": "STRING",
-          "value": "vblendps"
-        },
-        {
-          "type": "STRING",
-          "value": "vblendvps"
-        },
-        {
-          "type": "STRING",
-          "value": "vcvtusi2sd"
-        },
-        {
-          "type": "STRING",
-          "value": "vdivsd"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovaps"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovapd"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovss"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovdqu"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovdqu64"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovdqu32"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovdqa"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovdqa32"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovdqa64"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovq"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovups"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovd"
-        },
-        {
-          "type": "STRING",
-          "value": "vmovsd"
-        },
-        {
-          "type": "STRING",
-          "value": "vmulsd"
-        },
-        {
-          "type": "STRING",
-          "value": "vpackusdw"
-        },
-        {
-          "type": "STRING",
-          "value": "vpaddd"
-        },
-        {
-          "type": "STRING",
-          "value": "vpaddb"
-        },
-        {
-          "type": "STRING",
-          "value": "vpaddq"
-        },
-        {
-          "type": "STRING",
-          "value": "vpaddw"
-        },
-        {
-          "type": "STRING",
-          "value": "vpalignr"
-        },
-        {
-          "type": "STRING",
-          "value": "vpcmpgtd"
-        },
+        }
+      ]
+    },
+    "ExtractOpcode": {
+      "type": "CHOICE",
+      "members": [
         {
           "type": "STRING",
           "value": "vpextrw"
         },
+        {
+          "type": "STRING",
+          "value": "vextracti128"
+        },
+        {
+          "type": "STRING",
+          "value": "vextracti32x4"
+        },
+        {
+          "type": "STRING",
+          "value": "pextrq"
+        },
+        {
+          "type": "STRING",
+          "value": "pextrw"
+        },
+        {
+          "type": "STRING",
+          "value": "pextrb"
+        }
+      ]
+    },
+    "InsertOpcode": {
+      "type": "CHOICE",
+      "members": [
         {
           "type": "STRING",
           "value": "vpinsrw"
@@ -1446,154 +1744,6 @@
         },
         {
           "type": "STRING",
-          "value": "vpmaddubsw"
-        },
-        {
-          "type": "STRING",
-          "value": "vpmaddwd"
-        },
-        {
-          "type": "STRING",
-          "value": "vpmullw"
-        },
-        {
-          "type": "STRING",
-          "value": "vpmuludq"
-        },
-        {
-          "type": "STRING",
-          "value": "vpor"
-        },
-        {
-          "type": "STRING",
-          "value": "vpshufb"
-        },
-        {
-          "type": "STRING",
-          "value": "vpshufd"
-        },
-        {
-          "type": "STRING",
-          "value": "vpslldq"
-        },
-        {
-          "type": "STRING",
-          "value": "vpslld"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsllq"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsllw"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsrldq"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsrld"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsrlq"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsrlw"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsubusw"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsubq"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsubd"
-        },
-        {
-          "type": "STRING",
-          "value": "vpsubw"
-        },
-        {
-          "type": "STRING",
-          "value": "vshufps"
-        },
-        {
-          "type": "STRING",
-          "value": "vsubsd"
-        },
-        {
-          "type": "STRING",
-          "value": "vucomisd"
-        },
-        {
-          "type": "STRING",
-          "value": "vucomiss"
-        },
-        {
-          "type": "STRING",
-          "value": "vunpckhpd"
-        },
-        {
-          "type": "STRING",
-          "value": "vunpckhps"
-        },
-        {
-          "type": "STRING",
-          "value": "vunpcklpd"
-        },
-        {
-          "type": "STRING",
-          "value": "vunpcklps"
-        },
-        {
-          "type": "STRING",
-          "value": "vbroadcastss"
-        },
-        {
-          "type": "STRING",
-          "value": "vinsertf128"
-        },
-        {
-          "type": "STRING",
-          "value": "vperm2f128"
-        },
-        {
-          "type": "STRING",
-          "value": "vzeroall"
-        },
-        {
-          "type": "STRING",
-          "value": "vzeroupper"
-        },
-        {
-          "type": "STRING",
-          "value": "vshufi32x4"
-        },
-        {
-          "type": "STRING",
-          "value": "vshufi64x2"
-        },
-        {
-          "type": "STRING",
-          "value": "vpblendmd"
-        },
-        {
-          "type": "STRING",
-          "value": "vextracti128"
-        },
-        {
-          "type": "STRING",
-          "value": "vextracti32x4"
-        },
-        {
-          "type": "STRING",
           "value": "vinserti128"
         },
         {
@@ -1606,23 +1756,77 @@
         },
         {
           "type": "STRING",
-          "value": "vpblendd"
+          "value": "vinsertf128"
         },
         {
           "type": "STRING",
-          "value": "vpbroadcastq"
+          "value": "pinsrw"
         },
         {
           "type": "STRING",
-          "value": "vpbroadcastd"
+          "value": "pinsrb"
         },
         {
           "type": "STRING",
-          "value": "vbroadcasti128"
+          "value": "pinsrd"
+        }
+      ]
+    },
+    "ShuffleOpcode": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "vpshufb"
         },
         {
           "type": "STRING",
-          "value": "vbroadcasti32x4"
+          "value": "vpshufd"
+        },
+        {
+          "type": "STRING",
+          "value": "vshufps"
+        },
+        {
+          "type": "STRING",
+          "value": "vshufi32x4"
+        },
+        {
+          "type": "STRING",
+          "value": "vshufi64x2"
+        },
+        {
+          "type": "STRING",
+          "value": "shufps"
+        },
+        {
+          "type": "STRING",
+          "value": "pshuflw"
+        },
+        {
+          "type": "STRING",
+          "value": "pshufd"
+        },
+        {
+          "type": "STRING",
+          "value": "pshufhw"
+        },
+        {
+          "type": "STRING",
+          "value": "shufpd"
+        },
+        {
+          "type": "STRING",
+          "value": "pshufb"
+        }
+      ]
+    },
+    "PermuteOpcode": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "vperm2f128"
         },
         {
           "type": "STRING",
@@ -1643,198 +1847,27 @@
         {
           "type": "STRING",
           "value": "vpermi2d"
+        }
+      ]
+    },
+    "BlendOpcode": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "vblendps"
         },
         {
           "type": "STRING",
-          "value": "tzcnt"
+          "value": "vblendvps"
         },
         {
           "type": "STRING",
-          "value": "rorx"
+          "value": "vpblendmd"
         },
         {
           "type": "STRING",
-          "value": "psubd"
-        },
-        {
-          "type": "STRING",
-          "value": "pmaddwd"
-        },
-        {
-          "type": "STRING",
-          "value": "pxor"
-        },
-        {
-          "type": "STRING",
-          "value": "psrad"
-        },
-        {
-          "type": "STRING",
-          "value": "pslld"
-        },
-        {
-          "type": "STRING",
-          "value": "pcmpgtd"
-        },
-        {
-          "type": "STRING",
-          "value": "pcmpeqd"
-        },
-        {
-          "type": "STRING",
-          "value": "por"
-        },
-        {
-          "type": "STRING",
-          "value": "paddw"
-        },
-        {
-          "type": "STRING",
-          "value": "psubusw"
-        },
-        {
-          "type": "STRING",
-          "value": "pcmpeqb"
-        },
-        {
-          "type": "STRING",
-          "value": "psubusb"
-        },
-        {
-          "type": "STRING",
-          "value": "psrld"
-        },
-        {
-          "type": "STRING",
-          "value": "psrlw"
-        },
-        {
-          "type": "STRING",
-          "value": "psllq"
-        },
-        {
-          "type": "STRING",
-          "value": "paddd"
-        },
-        {
-          "type": "STRING",
-          "value": "psrlq"
-        },
-        {
-          "type": "STRING",
-          "value": "psubb"
-        },
-        {
-          "type": "STRING",
-          "value": "maxss"
-        },
-        {
-          "type": "STRING",
-          "value": "pmovmskb"
-        },
-        {
-          "type": "STRING",
-          "value": "pinsrw"
-        },
-        {
-          "type": "STRING",
-          "value": "minss"
-        },
-        {
-          "type": "STRING",
-          "value": "prefetcht1"
-        },
-        {
-          "type": "STRING",
-          "value": "prefetcht0"
-        },
-        {
-          "type": "STRING",
-          "value": "pextrw"
-        },
-        {
-          "type": "STRING",
-          "value": "ucomiss"
-        },
-        {
-          "type": "STRING",
-          "value": "shufps"
-        },
-        {
-          "type": "STRING",
-          "value": "addsd"
-        },
-        {
-          "type": "STRING",
-          "value": "paddq"
-        },
-        {
-          "type": "STRING",
-          "value": "psubq"
-        },
-        {
-          "type": "STRING",
-          "value": "pshuflw"
-        },
-        {
-          "type": "STRING",
-          "value": "pmuludq"
-        },
-        {
-          "type": "STRING",
-          "value": "pshufd"
-        },
-        {
-          "type": "STRING",
-          "value": "minsd"
-        },
-        {
-          "type": "STRING",
-          "value": "pshufhw"
-        },
-        {
-          "type": "STRING",
-          "value": "mfence"
-        },
-        {
-          "type": "STRING",
-          "value": "maxsd"
-        },
-        {
-          "type": "STRING",
-          "value": "ucomisd"
-        },
-        {
-          "type": "STRING",
-          "value": "shufpd"
-        },
-        {
-          "type": "STRING",
-          "value": "pslldq"
-        },
-        {
-          "type": "STRING",
-          "value": "unpckhpd"
-        },
-        {
-          "type": "STRING",
-          "value": "psrldq"
-        },
-        {
-          "type": "STRING",
-          "value": "palignr"
-        },
-        {
-          "type": "STRING",
-          "value": "pshufb"
-        },
-        {
-          "type": "STRING",
-          "value": "pmaddubsw"
-        },
-        {
-          "type": "STRING",
-          "value": "pinsrb"
+          "value": "vpblendd"
         },
         {
           "type": "STRING",
@@ -1842,23 +1875,32 @@
         },
         {
           "type": "STRING",
-          "value": "pextrq"
-        },
-        {
-          "type": "STRING",
           "value": "blendvps"
+        }
+      ]
+    },
+    "BroadcastOpcode": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "vbroadcastss"
         },
         {
           "type": "STRING",
-          "value": "pextrb"
+          "value": "vpbroadcastq"
         },
         {
           "type": "STRING",
-          "value": "pinsrd"
+          "value": "vpbroadcastd"
         },
         {
           "type": "STRING",
-          "value": "femms"
+          "value": "vbroadcasti128"
+        },
+        {
+          "type": "STRING",
+          "value": "vbroadcasti32x4"
         }
       ]
     },

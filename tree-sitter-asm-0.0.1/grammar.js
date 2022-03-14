@@ -11,16 +11,16 @@ module.exports = grammar({
         _byte: $ => /[0-9a-f][0-9a-f]/,
         comment: $ => choice(/#.*/, /===.*/),
         _line_break: $ => '\n',
-	_colon: $ => ':',
-	_comma: $ => /,/,
-	_machine_code: $ => seq(
+        _colon: $ => ':',
+        _comma: $ => /,/,
+        _machine_code: $ => seq(
             $._address,
             $._colon,
             repeat($._byte),
-	),
+        ),
 
         _line: $ => seq(
-            // $._machine_code,
+            //$._machine_code,
             optional($._machine_code),
             optional($.instruction),
             optional($.comment),
@@ -28,10 +28,10 @@ module.exports = grammar({
         ),
 
 
-	instruction: $ => choice(
-		$.data,
-		$.control
-	),
+        instruction: $ => choice(
+            $.data,
+            $.control
+        ),
 
         data: $ => seq(
             $.opcode,
@@ -43,7 +43,6 @@ module.exports = grammar({
             $.BinaryArithmeticOpcode,
             $.BitAndByteOpcode,
             //$.ControlTransferOpcode,  //this is replaced by controlOpcode
-            $.CuriousOpcode,
             $.DataTransferOpcode,
             $.IOOpcode,
             $.LogicalOpcode,
@@ -54,7 +53,13 @@ module.exports = grammar({
             $.StackOpcode,
             $.StringOpcode,
             $.AccessRegisterOpcode,
-            $.ToBeClassifiedOpcode
+            $.CryptoOpcode,
+            $.ExtractOpcode,
+            $.InsertOpcode,
+            $.ShuffleOpcode,
+            $.PermuteOpcode,
+            $.BlendOpcode,
+            $.BroadcastOpcode
         ),
 
         BinaryArithmeticOpcode: $ => choice(
@@ -67,7 +72,17 @@ module.exports = grammar({
             'neg', 'negl', 'negq',
             'fmulp',
             'vpclmulhqlqdq', 'pclmullqlqdq', 'pclmullqhqdq',
-            'vpclmullqhqdq', 'vpclmulhqhqdq', 'pclmulhqhqdq', 'vpclmullqlqdq'
+            'vpclmullqhqdq', 'vpclmulhqhqdq', 'pclmulhqhqdq', 'vpclmullqlqdq',
+            'adcx', 'adox', 'vmulsd',
+            'vpaddd', 'vpaddb', 'vpaddq', 'vpaddw',
+            'vpcmpgtd', 'vdivsd',
+            'vpmaddubsw', 'vpmaddwd', 'vpmullw', 'vpmuludq',
+            'vucomisd', 'vucomiss', 'addsd', 'ucomisd', 'ucomiss',
+            'maxsd', 'minsd', 'maxss', 'minss',
+            'vsubsd', 'vpsubusw', 'vpsubq', 'vpsubd', 'vpsubw',
+            'psubd', 'pmaddwd', 'paddw', 'psubusw', 'psubusb', 'psubb', 'psubq',
+            'paddq', 'pmuludq', 'pmaddubsw', 'paddd',
+            'pcmpgtd', 'pcmpeqd', 'pcmpeqb', 'vpcmpltud'
         ),
 
         BitAndByteOpcode: $ => choice(
@@ -80,10 +95,6 @@ module.exports = grammar({
             'knotw'
         ),
 
-        CuriousOpcode: $ => choice(
-            'vpcmpltud', 'gs', 're', 'ss', 'leaveq', 'retq'
-        ),
-
         DataTransferOpcode: $ => choice(
             'bswap', 'cbtw', 'cltd', 'cltq',
             'cmovbe', 'cmovl', 'cmovae', 'cmovo',
@@ -93,13 +104,16 @@ module.exports = grammar({
             'cwtl', 'cbtw', 'cwtd', 'cltd', 'cltq', 'cqto',
             'cvttsd2si', 'cvtss2sd', 'cvttss2si',
             'cvtsi2sd', 'cvtsi2ss', 'cvtsi2sdq',
-            'cvtsi2sdl', 'cvtsd2ss', 'cvtsi2ssl',
+            'cvtsi2sdl', 'cvtsd2ss', 'cvtsi2ssl', 'vcvtusi2sd',
             'mov', 'movw', 'movl', 'movq', 'movb',
             'movabs', 'movsbw', 'movsbq', 'movsbl',
             'movswl', 'movswq', 'movzbw', 'movzbq', 'movzbl',
             'movzwl', 'movaps', 'movhlps', 'movss', 'movups', 'movsd',
             'movd', 'movhps', 'movdqa', 'movbe', 'movapd', 'movdqu',
-            'xchg', 'fildl', 'fldt', 'fstpl'
+            'xchg', 'fildl', 'fldt', 'fstpl',
+            'vmovaps', 'vmovapd', 'vmovss', 'vmovdqu', 'vmovdqu64', 'vmovdqu32',
+            'vmovdqa', 'vmovdqa32', 'vmovdqa64', 'vmovq', 'vmovups', 'vmovd',
+            'vmovsd', 'pmovmskb'
         ),
 
         IOOpcode: $ => choice(
@@ -110,7 +124,8 @@ module.exports = grammar({
             'or', 'orq', 'orl', 'orb', 'orw',
             'xor', 'xorl', 'xorw', 'xorps', 'xorpd', 'vxorps', 'vpxord', 'vpxor',
             'and', 'andq', 'andl', 'andw', 'andb', 'andn', 'andpd', 'pand', 'pandn', 'andps', 'vpand',
-            'not', 'notl', 'notw'
+            'not', 'notl', 'notw',
+            'vpor', 'por', 'pxor'
         ),
 
         MiscellaneousOpcode: $ => choice(
@@ -118,10 +133,19 @@ module.exports = grammar({
             'nop', 'nopl', 'nopw',
             'ud2', 'data16', 'sha1rnds4',
             'addr32', 'sha1msg1', 'sha1msg2',
-            'sha1nexte', 'endbr64'
+            'sha1nexte', 'endbr64',
+            'gs', 're', 'ss'
         ),
 
-        OperatingSystemSupportOpcode: $ => 'lock',
+        OperatingSystemSupportOpcode: $ => choice(
+            'lock',
+            'prefetcht1',
+            'prefetcht0',
+            'mfence',
+            'femms',
+            'tzcnt',
+            'leaveq', 'retq'
+        ),
 
         PackUnpackOpcode: $ => choice(
             'packuswb', 'punpckhbw', 'punpckhdq', 'punpckhwd',
@@ -129,7 +153,9 @@ module.exports = grammar({
             'vpunpcklwd', 'vpunpckldq',
             'punpcklqdq', 'punpckhqdq',
             'vpunpckhqdq', 'vpunpckhdq',
-            'vpunpcklqdq', 'vpunpckhwd'
+            'vpunpcklqdq', 'vpunpckhwd',
+            'vpackusdw', 'vpalignr', 'palignr',
+            'vunpckhpd', 'vunpckhps', 'vunpcklpd', 'vunpcklps', 'unpckhpd'
         ),
 
         ShiftAndRotateOpcode: $ => choice(
@@ -137,7 +163,11 @@ module.exports = grammar({
             'shl', 'shll', 'shld', 'shlx', 'shlq',
             'shr', 'shrq', 'shrd', 'shrl', 'shrx',
             'vprord', 'vprorq',
-            'rorl', 'roll'
+            'rorl', 'roll',
+            'vpslldq', 'vpslld', 'vpsllq', 'vpsllw',
+            'vpsrldq', 'vpsrld', 'vpsrlq', 'vpsrlw',
+            'rorx', 'psrld', 'psrlw', 'psllq', 'psrlq',
+            'pslldq', 'psrldq', 'psrad', 'pslld'
         ),
 
         StackOpcode: $ => choice(
@@ -152,102 +182,47 @@ module.exports = grammar({
             'rex', 'rex.WB', 'rex.WRB',
             'rex.RXB', 'rex.B', 'rex.WRXB',
             'rex.XB', 'rex.W', 'rex.RB',
-            'xgetbv', 'fs', 'kmovw'
+            'xgetbv', 'fs', 'kmovw',
+            'vzeroall', 'vzeroupper'
         ),
 
-        ToBeClassifiedOpcode: $ => choice(
-            //ADX_Instructions
-            'adcx', 'adox',
-            //AES_Instructions
+        CryptoOpcode: $ => choice(
             'aesdec', 'aesdeclast',
             'aesenc', 'aesenclast', 'vaesenc', 'vaesenclast',
-            'aeskeygenassist',
-            //AVX_Instructions
-            'vblendps', 'vblendvps', 'vcvtusi2sd', 'vdivsd',
-            'vmovaps', 'vmovapd', 'vmovss', 'vmovdqu', 'vmovdqu64', 'vmovdqu32',
-            'vmovdqa', 'vmovdqa32', 'vmovdqa64', 'vmovq', 'vmovups', 'vmovd',
-            'vmovsd', 'vmulsd', 'vpackusdw',
-            'vpaddd', 'vpaddb', 'vpaddq', 'vpaddw',
-            'vpalignr', 'vpcmpgtd',
-            'vpextrw', 'vpinsrw', 'vpinsrd', 'vpinsrq', 'vpinsrb',
-            'vpmaddubsw', 'vpmaddwd', 'vpmullw', 'vpmuludq',
-            'vpor', 'vpshufb', 'vpshufd', 'vpslldq',
-            'vpslld', 'vpsllq', 'vpsllw',
-            'vpsrldq', 'vpsrld', 'vpsrlq', 'vpsrlw',
-            'vpsubusw', 'vpsubq', 'vpsubd', 'vpsubw',
-            'vshufps', 'vsubsd', 'vucomisd', 'vucomiss',
-            'vunpckhpd', 'vunpckhps', 'vunpcklpd', 'vunpcklps',
-            'vbroadcastss', 'vinsertf128', 'vperm2f128',
-            'vzeroall', 'vzeroupper',
+            'aeskeygenassist'
+        ),
+
+        ExtractOpcode: $ => choice(
+            'vpextrw',
+            'vextracti128', 'vextracti32x4',
+            'pextrq', 'pextrw', 'pextrb'
+        ),
+
+        InsertOpcode: $ => choice(
+            'vpinsrw', 'vpinsrd', 'vpinsrq', 'vpinsrb',
+            'vinserti128', 'vinserti32x4', 'vinserti64x4', 'vinsertf128',
+            'pinsrw', 'pinsrb', 'pinsrd'
+        ),
+
+        ShuffleOpcode: $ => choice(
+            'vpshufb', 'vpshufd', 'vshufps',
             'vshufi32x4', 'vshufi64x2',
-            'vpblendmd',
-            //AVX2_Instructions
-            'vextracti128', 'vextracti32x4', 'vinserti128', 'vinserti32x4', 'vinserti64x4',
-            'vpblendd',
-            'vpbroadcastq', 'vpbroadcastd', 'vbroadcasti128', 'vbroadcasti32x4',
-            'vperm2i128', 'vpermd', 'vpermq', 'vpermt2d', 'vpermi2d',
-            //BMI1_Instructions
-            'tzcnt',
-            //BMI2_Instructions
-            'rorx',
-            //MMX_Instructions
-            'psubd',
-            'pmaddwd',
-            'pxor',
-            'psrad',
-            'pslld',
-            'pcmpgtd',
-            'pcmpeqd',
-            'por',
-            'paddw',
-            'psubusw',
-            'pcmpeqb',
-            'psubusb',
-            'psrld',
-            'psrlw',
-            'psllq',
-            'paddd',
-            'psrlq',
-            'psubb',
-            //SSE_Instructions
-            'maxss',
-            'pmovmskb',
-            'pinsrw',
-            'minss',
-            'prefetcht1',
-            'prefetcht0',
-            'pextrw',
-            'ucomiss',
-            'shufps',
-            //SSE2_Instructions
-            'addsd',
-            'paddq',
-            'psubq',
-            'pshuflw',
-            'pmuludq',
-            'pshufd',
-            'minsd',
-            'pshufhw',
-            'mfence',
-            'maxsd',
-            'ucomisd',
-            'shufpd',
-            'pslldq',
-            'unpckhpd',
-            'psrldq',
-            //SSE3_Instructions
-            'palignr',
-            'pshufb',
-            'pmaddubsw',
-            //SSE4_1_Instructions
-            'pinsrb',
-            'pblendw',
-            'pextrq',
-            'blendvps',
-            'pextrb',
-            'pinsrd',
-            //ThreeDNow_Instructions
-            'femms'
+            'shufps', 'pshuflw', 'pshufd',
+            'pshufhw', 'shufpd', 'pshufb'
+        ),
+
+        PermuteOpcode: $ => choice(
+            'vperm2f128', 'vperm2i128', 'vpermd', 'vpermq', 'vpermt2d', 'vpermi2d'
+        ),
+
+        BlendOpcode: $ => choice(
+            'vblendps', 'vblendvps', 'vpblendmd',
+            'vpblendd', 'pblendw',
+            'blendvps'
+        ),
+
+        BroadcastOpcode: $ => choice(
+            'vbroadcastss', 'vpbroadcastq', 'vpbroadcastd', 'vbroadcasti128', 'vbroadcasti32x4'
         ),
 
         operand: $ => choice(

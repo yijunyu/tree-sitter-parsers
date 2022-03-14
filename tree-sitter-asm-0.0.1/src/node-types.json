@@ -15,7 +15,17 @@
     "fields": {}
   },
   {
-    "type": "CuriousOpcode",
+    "type": "BlendOpcode",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "BroadcastOpcode",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "CryptoOpcode",
     "named": true,
     "fields": {}
   },
@@ -25,7 +35,17 @@
     "fields": {}
   },
   {
+    "type": "ExtractOpcode",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "IOOpcode",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "InsertOpcode",
     "named": true,
     "fields": {}
   },
@@ -40,12 +60,27 @@
     "fields": {}
   },
   {
+    "type": "OperatingSystemSupportOpcode",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "PackUnpackOpcode",
     "named": true,
     "fields": {}
   },
   {
+    "type": "PermuteOpcode",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "ShiftAndRotateOpcode",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ShuffleOpcode",
     "named": true,
     "fields": {}
   },
@@ -56,11 +91,6 @@
   },
   {
     "type": "StringOpcode",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "ToBeClassifiedOpcode",
     "named": true,
     "fields": {}
   },
@@ -397,7 +427,15 @@
           "named": true
         },
         {
-          "type": "CuriousOpcode",
+          "type": "BlendOpcode",
+          "named": true
+        },
+        {
+          "type": "BroadcastOpcode",
+          "named": true
+        },
+        {
+          "type": "CryptoOpcode",
           "named": true
         },
         {
@@ -405,7 +443,15 @@
           "named": true
         },
         {
+          "type": "ExtractOpcode",
+          "named": true
+        },
+        {
           "type": "IOOpcode",
+          "named": true
+        },
+        {
+          "type": "InsertOpcode",
           "named": true
         },
         {
@@ -425,7 +471,15 @@
           "named": true
         },
         {
+          "type": "PermuteOpcode",
+          "named": true
+        },
+        {
           "type": "ShiftAndRotateOpcode",
+          "named": true
+        },
+        {
+          "type": "ShuffleOpcode",
           "named": true
         },
         {
@@ -434,10 +488,6 @@
         },
         {
           "type": "StringOpcode",
-          "named": true
-        },
-        {
-          "type": "ToBeClassifiedOpcode",
           "named": true
         }
       ]
@@ -918,10 +968,6 @@
     "named": false
   },
   {
-    "type": "OperatingSystemSupportOpcode",
-    "named": true
-  },
-  {
     "type": "adc",
     "named": false
   },
@@ -1387,6 +1433,10 @@
   },
   {
     "type": "leaveq",
+    "named": false
+  },
+  {
+    "type": "lock",
     "named": false
   },
   {
